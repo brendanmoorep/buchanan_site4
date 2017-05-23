@@ -1,0 +1,153 @@
+/*
+Theme Name:Buchanan Partners
+Author:Brendan Moore-Penaskovic
+Version:1.0.0
+*/
+
+.content{
+    padding-left:25px;
+}
+
+#pagetitle #breadcrumb{
+    display:none;
+}
+
+/* template-projects */
+
+.portfolio-item-image{
+    padding-bottom:90%;
+}
+
+/* Single-Projects STYLES */
+
+.single-projects .outer{
+    /*position:absolute;*/
+    /*height:100%;*/
+}
+
+.single-projects .wrapper{
+    /*height:100%;*/
+}
+
+.single-projects #main{
+    min-height:500px;
+    position: relative;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.single-projects #project-gallery {
+    min-height:500px;
+    padding-left:0;
+}
+
+.single-projects .carousel{
+    position: absolute;
+}
+
+
+/* CAROUSEL STYLES */
+
+.item{
+    height:100%;
+}
+
+.thumb {
+    height: 90px !important;
+    width: 100px  !important;
+    background-size: contain;
+    display:inline-block;
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity 200ms;
+    position: relative !important;
+    top: 5px !important;
+    margin-left:2px !important;
+    border:#fff solid 1px;
+}
+.thumb:hover {
+    opacity: 1;
+}
+.thumb.active {
+    opacity: 1;
+    border:gray solid 1px;
+}
+
+.carousel {
+    width:100%;height:100%;
+}
+#indicators-wrapper{
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    white-space:nowrap;
+    height: 100px;
+}
+#indicators-bg{
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    white-space:nowrap;
+    height: 100px;
+    background: #111;
+    opacity: .4;
+}
+.carousel-indicators {
+    margin: 0 !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    padding-right: 5px;
+    width: auto !important;
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    white-space:nowrap;
+    height: 100px;
+
+}
+
+.carousel-inner {
+    position: absolute; top:0; left:0; right:0;
+    bottom: 0;
+}
+.carousel-control {
+    bottom: 100px;
+    z-index:2000;
+}
+
+@media (max-width: 1300px) {
+    #indicators-wrapper { display: none }
+    .carousel-inner { bottom: 0; }
+    .carousel-control { bottom: 0; }
+}
+
+.item-label {
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.item .caption {
+    position: absolute;
+    bottom: 5px;
+    right: 14px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0 0 10px #000;
+}
+
+.field {
+    float:left; margin-right: 40px; width: 150px; padding-top: 15px;
+}
+
+@media (max-width: 767px) {
+    .field {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+}
