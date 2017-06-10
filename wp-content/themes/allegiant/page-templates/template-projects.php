@@ -23,9 +23,7 @@
 			<?php if(get_query_var('paged')) $current_page = get_query_var('paged'); else $current_page = 1; ?>	
 			<?php $query = new WP_Query('post_type=projects&paged='.$current_page.'&posts_per_page=16&order=ASC&orderby=menu_order'); ?>
             <?php
-//                echo '<pre>';
-//                print_r($query->posts);
-//                echo '</pre>';
+
             ?>
 			<?php if($query->posts): $feature_count = 0; ?>
 			<section id="portfolio" class="portfolio">
