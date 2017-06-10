@@ -27,10 +27,25 @@ Version:1.0.0
     margin-right:0;
 }
 
-.team-member *{
-
+#single-team-member > img{
+    float:left;
 }
 
+#single-team-member h2{
+    margin-top:0;
+    border-bottom:1px solid #e8e6e6;
+    padding-bottom:5px;
+}
+
+#single-team-member h4 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#single-team-member .page-content p{
+    font-weight: 300;
+}
 /* template-projects */
 
 .portfolio-item-image{
