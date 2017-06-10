@@ -705,11 +705,11 @@ msgstr ""
 "Especifica un icono para utilizarlo en la previsualización del servicio."
 
 #: .././metadata/data_metaboxes.php:98
-msgid "Featured Member"
+msgid "Principal"
 msgstr "Miembro Destacado"
 
 #: .././metadata/data_metaboxes.php:99
-msgid "Specifies whether this member appears in the homepage."
+msgid "Specifies whether this member is a Principal member or not."
 msgstr "Indica si este elemento aparece en la página de inicio."
 
 #: .././metadata/data_metaboxes.php:114

@@ -95,9 +95,16 @@ function cpotheme_metadata_team_options(){
 	$data['team_featured'] = array(
 	'name' => 'team_featured',
 	'std'  => '',
-	'label' => __('Featured Member', 'allegiant'),
-	'desc' => __('Specifies whether this member appears in the homepage.', 'allegiant'),
+	'label' => __('Principal', 'allegiant'), //TODO: this was edited by Brendan MP
+	'desc' => __('Specifies whether this team member is a Pincipal member or not.', 'allegiant'),
 	'type' => 'yesno');
+
+    $data['team_founding_principal'] = array(
+        'name' => 'team_founding_principal',
+        'std'  => '',
+        'label' => __('Founding Principal', 'allegiant'), //TODO: this was edited by Brendan MP
+        'desc' => __('Specifies whether this team member is a Fouding Pincipal member or not.', 'allegiant'),
+        'type' => 'yesno');
 	
 	return apply_filters('cpotheme_metadata_team', $data);
 }

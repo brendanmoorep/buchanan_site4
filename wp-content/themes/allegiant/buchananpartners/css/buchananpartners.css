@@ -12,6 +12,25 @@ Version:1.0.0
     display:none;
 }
 
+/*
+    template-team
+*/
+
+#team > div > h3{
+    border-bottom: 1px solid #e8e6e6;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+#team > div > .row{
+    margin-left:0;
+    margin-right:0;
+}
+
+.team-member *{
+
+}
+
 /* template-projects */
 
 .portfolio-item-image{
