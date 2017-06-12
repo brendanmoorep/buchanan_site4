@@ -4,6 +4,32 @@ Author:Brendan Moore-Penaskovic
 Version:1.0.0
 */
 
+/* BUTTONS */
+
+/* Taxonomies Filter */
+#taxonomies-filter .categories-list button{
+    margin-right:5px;
+}
+
+#taxonomies-filter .section{
+    display:inline-block;
+}
+
+#taxonomies-filter .section > span{
+    margin-right:5px;
+}
+
+#taxonomies-filter .section.categories-list > span{
+    margin-left:10px;
+}
+
+/* BUTTONS */
+
+.dropdown-menu li{
+    list-style: none;
+    margin:0;
+}
+
 .content{
     padding-left:25px;
 }
