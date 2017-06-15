@@ -133,7 +133,7 @@ LAYOUT
 
 /* WRAPPERS */
 .outer { position:relative; overflow:hidden; width:100%; }
-.container { max-width:960px; padding:0 20px; margin:0 auto; }
+/*.container { max-width:960px; padding:0 20px; margin:0 auto; }*/
 .wrapper-boxed .wrapper { position:relative; margin:0 auto; max-width:100%; width:1000px; }
 
 
@@ -638,7 +638,7 @@ RESPONSIVE STYLES
 
 /* LARGE SCREENS */
 @media screen and (min-width: 1280px){
-	.container { max-width:1180px; }
+	/* .container { max-width:1180px; } */
 	.wrapper-boxed .wrapper { width:1220px; }
 	.wrapper-boxed .container { padding:0 40px; }
 }
@@ -688,7 +688,7 @@ RESPONSIVE STYLES
 	
 	
 	/* WRAPPERS */	
-	.container { padding:0 20px; }
+	/*.container { padding:0 20px; }*/
 
 	
 	/* CONTENT */
@@ -731,7 +731,7 @@ RESPONSIVE STYLES
 	
 	
 	/* LAYOUT COLUMNS */
-	.container { padding:0 10px; }
+	/* .container { padding:0 10px; } */
 	body .column,
 	body .column.column-narrow,
 	body .column.column-fit { float:none; width:auto; margin:0; }

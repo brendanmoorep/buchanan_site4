@@ -6,7 +6,9 @@
         foreach ($terms as $term):
             array_push($termIds, $term->slug);
         endforeach;
-     $termsAttr = join(",",$termIds);
+     $termsAttr = join("','",$termIds);
+     $termsAttr = "'" . $termsAttr . "'";
+
     }
 ?>
 <div style="" data-categories="[<?php echo $termsAttr; ?>]" class="portfolio-item dark <?php if(has_excerpt()) echo ' portfolio-item-has-excerpt'; ?>">

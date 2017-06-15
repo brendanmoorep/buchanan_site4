@@ -3,10 +3,23 @@ Theme Name:Buchanan Partners
 Author:Brendan Moore-Penaskovic
 Version:1.0.0
 */
+button{
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    outline: none !important;
+}
+button:active {
+    outline: none !important;
+    border: none;
+}
 
-/* BUTTONS */
+.hide{
+    display:none;
+}
 
-/* Taxonomies Filter */
+/*
+    template-projects / portfolio
+*/
+
 #taxonomies-filter .categories-list button{
     margin-right:5px;
 }
@@ -23,8 +36,6 @@ Version:1.0.0
     margin-left:10px;
 }
 
-/* BUTTONS */
-
 .dropdown-menu li{
     list-style: none;
     margin:0;
@@ -36,6 +47,24 @@ Version:1.0.0
 
 #pagetitle #breadcrumb{
     display:none;
+}
+
+#shuffle-sizer{
+    margin-right:5px;
+}
+
+.portfolio-item{
+    padding:0 1px;
+    margin-bottom:10px;
+}
+
+.portfolio-item > div{
+    background:red;
+    padding:0 0 90% 0;
+}
+
+h3.portfolio-item-title {
+    color:white;
 }
 
 /*
@@ -73,6 +102,14 @@ Version:1.0.0
     font-weight: 300;
 }
 /* template-projects */
+
+.portfolio-item-image{
+    height:300px;
+}
+#sizer{
+    height:300px;
+    width:33.33%;
+}
 
 .portfolio-item-image{
     padding-bottom:90%;
