@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="587dd44c-9354-429b-9fc7-a925032ea18b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +13,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4920635">
+    <splitter split-orientation="horizontal" split-proportion="0.63095236">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="template-projects.php" pinned="false" current-in-tab="false">
@@ -30,11 +28,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="template-contact-us.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="template-contact-us.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="template-team.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="630">
+                  <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -80,11 +88,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="markup.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="markup.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4110">
-                  <caret line="274" column="61" lean-forward="false" selection-start-line="274" selection-start-column="52" selection-end-line="274" selection-end-column="61" />
+                <state relative-caret-position="549">
+                  <caret line="286" column="13" lean-forward="true" selection-start-line="286" selection-start-column="13" selection-end-line="286" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -246,12 +254,12 @@
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/single-cpo_team.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-project.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/core/css/base.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-shuffle-project.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-projects.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php" />
       </list>
     </option>
   </component>
@@ -647,18 +655,18 @@
       <workItem from="1497407787492" duration="5924000" />
       <workItem from="1497486045377" duration="6118000" />
       <workItem from="1497563191231" duration="3188000" />
-      <workItem from="1497675790834" duration="7070000" />
+      <workItem from="1497675790834" duration="7803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61200000" />
+    <option name="totallyTimeSpent" value="61933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -961,13 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="52" column="40" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="52" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-team.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1036,14 +1037,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4110">
-          <caret line="274" column="61" lean-forward="false" selection-start-line="274" selection-start-column="52" selection-end-line="274" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-shuffle-project.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1094,18 +1087,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="286" column="13" lean-forward="true" selection-start-line="286" selection-start-column="13" selection-end-line="286" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -273,22 +273,24 @@ if(!function_exists('cpotheme_grid_default')){
 //Runs the grid using a custom loop
 if(!function_exists('cpotheme_grid_custom')){
 	function cpotheme_grid_custom($posts, $element, $template, $columns = 3, $args = null){
-		global $post;
-		$class = isset($args['class']) ? $args['class'] : '';
-		if($columns == '') $columns = 3;
-
-		$count = 0;
-		foreach($posts as $post){ 
-			setup_postdata($post);
-			if($count % $columns == 0 && $count > 0){
-				do_action('cpotheme_grid_'.esc_attr($template));
-			}
-			$count++;
-			echo '<div class="column '.esc_attr($class).' col'.esc_attr($columns).'">';
-			get_template_part('template-parts/'.esc_attr($element), esc_attr($template));
-			echo '</div>';
-		}
-        echo '<div id="sizer" class="column '.esc_attr($class).' col'.esc_attr($columns).'"></div>';
+        global $post;
+        $class = isset($args['class']) ? $args['class'] : '';
+        if($columns == '') $columns = 3;
+            echo '<div class="row">';
+        $count = 0;
+  		foreach($posts as $post){
+            setup_postdata($post);
+            if($count % $columns == 0 && $count > 0){
+                echo '</div>';
+  				do_action('cpotheme_grid_'.esc_attr($template));
+    			echo '<div class="row">';
+  			}
+            $count++;
+            echo '<div class="column '.esc_attr($class).' col'.esc_attr($columns).'">';
+            get_template_part('template-parts/'.esc_attr($element), esc_attr($template));
+            echo '</div>';
+        }
+        echo '</div>';
 	}
 }
 
