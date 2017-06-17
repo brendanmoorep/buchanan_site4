@@ -3,6 +3,19 @@ Theme Name:Buchanan Partners
 Author:Brendan Moore-Penaskovic
 Version:1.0.0
 */
+.main-bg{
+     background-color:#205582;
+     color:#fff;
+}
+.main-bg a, .main-bg a:visited{
+    color:#fff;
+}
+.main-bg a:hover{
+
+}
+.center{
+    text-align:center;
+}
 button{
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     outline: none !important;
@@ -142,6 +155,59 @@ h3.portfolio-item-title {
     position: absolute;
 }
 
+/* CONTACT US STYLES */
+#contact-info{
+    padding:50px 0;
+}
+
+#contact-info p{
+    margin-bottom:2px;
+}
+
+.contact-icon{
+    font-size: 50px;
+    background-color: rgba(255,255,255,0.5);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 100px;
+    padding-top: 18px;
+}
+#content h2{
+    color:#205582;
+}
+#contact-us-page label{
+    color:#205582;
+}
+#contact-us-page form{
+    margin-top:30px;
+}
+#contact-us-page input, #contact-us-page textarea{
+    border:1px solid rgba(32,89,138,0.5);
+    border-radius: 5px;
+    background-color:transparent;
+}
+
+#contact-us-page input[type="submit"]{
+    color:rgba(32,89,138,0.8);
+    background-color:transparent;
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    -ms-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+#contact-us-page input[type="submit"]:hover{
+    color:white;
+    background-color:rgba(32,89,138,1);
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    -ms-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+}
 
 /* CAROUSEL STYLES */
 
