@@ -3,6 +3,13 @@ Theme Name:Buchanan Partners
 Author:Brendan Moore-Penaskovic
 Version:1.0.0
 */
+body.custom-background{
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+.white-overlay{
+    background-color:rgba(255,255,255,.7);
+}
 .main-bg{
      background-color:#205582;
      color:#fff;
@@ -158,6 +165,7 @@ h3.portfolio-item-title {
 /* CONTACT US STYLES */
 #contact-info{
     padding:50px 0;
+    background:;
 }
 
 #contact-info p{

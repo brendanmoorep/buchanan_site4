@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/element', 'page-header'); ?>
-    <div id="contact-us-page">
+    <div id="contact-us-page" class="white-overlay">
         <div id="contact-info" class="main-bg center">
             <div class="container">
                 <div class="row">
@@ -43,5 +43,4 @@
                 <div class="clear"></div>
             </div>
         </div>
-    </div>
 <?php get_footer(); ?>
