@@ -1,17 +1,4 @@
-<?php
-    $terms = get_the_terms($post->ID, 'property_type');
-    $termIds = [];
-    $termsAttr = '';
-    if($terms){
-        foreach ($terms as $term):
-            array_push($termIds, $term->slug);
-        endforeach;
-     $termsAttr = join("','",$termIds);
-     $termsAttr = "'" . $termsAttr . "'";
-
-    }
-?>
-<div style="" data-categories="[<?php echo $termsAttr; ?>]" class="portfolio-item dark <?php if(has_excerpt()) echo ' portfolio-item-has-excerpt'; ?>">
+<div style="" data-categories="[<?php echo $post->termsAttr; ?>]" class="portfolio-item dark <?php if(has_excerpt()) echo ' portfolio-item-has-excerpt'; ?>">
     <?php foreach( get_cfc_meta( 'project_details' ) as $key => $value ){ ?>
     <?php $photo_obj = get_cfc_field( 'project_details','images', false, $key ); ?>
 	 <a class="portfolio-item-image" style="background-image: url('<?php echo $photo_obj['url']; ?>'); background-size: cover; background-position: undefined;" href="<?php the_permalink(); ?>">
