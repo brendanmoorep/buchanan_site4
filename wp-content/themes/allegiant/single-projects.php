@@ -3,7 +3,6 @@
 <?php //get_template_part('template-parts/element', 'page-header'); ?>
 
 <?php if(have_posts()) while(have_posts()): the_post(); ?>
-
 <div id="main" class="main">
 	<div class="container-fluid">
         <div class="row">
@@ -57,8 +56,26 @@
                             <h1><?php the_title(); ?></div></h1>
                         <?php the_content(); ?>
                     </div>
+                    <div id="properties-wrapper">
+                        <?php
+                            $properties_meta = get_cfc_meta( 'properties' ); // all values in properties field custom meta box
+                            foreach($properties_meta as $key => $value):
+                                $property_image = get_cfc_field( 'properties','property_images', false, $key );
+                                //debugg($property_image);
+                            ?>
+                                <article class="">
+                                    <div>
+                                        <h4><?php echo $properties_meta[$key]['properties_title']; ?></h4>
+                                        <p><?php echo $properties_meta[$key]['properties_description']; ?></p>
+                                        <img src="<?php echo $property_image['sizes']['medium']; ?>" />
+                                    </div>
+                                </article>
+                        <?php
+                                //debugg($property_image);
+                            endforeach;
+                        ?>
+                    </div>
                     <div class="clear"></div>
-                </div>
                 <?php endwhile; ?>
         </div>
         </section>

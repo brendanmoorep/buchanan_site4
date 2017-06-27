@@ -44,15 +44,28 @@ button:active {
 /*
     template-projects / portfolio
 */
+#projects-content-wrapper{
+    position:relative;
+}
+#projects-content-wrapper .col-md-6
 .page-template-template-projects .main{
     padding:0;
 }
+#projects-map-wrapper{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    left: 0;
+    height: 100%;
+}
 #portfolio{
-    padding-top:0;
+    padding:0;
+    height:400px;
+    overflow-y:auto;
 }
 #projects-map{
     width:100%;
-    height:400px;
+    height:100%;
 }
 #taxonomies-filter{
     padding:20px 0;
@@ -154,13 +167,14 @@ h3.portfolio-item-title {
 
 /* Single-Projects STYLES */
 
-.single-projects .outer{
-    /*position:absolute;*/
-    /*height:100%;*/
+.single-projects .content{
+    width:100%;
 }
 
-.single-projects .wrapper{
-    /*height:100%;*/
+#properties-wrapper{
+    margin-top:40px;
+    border-top:1px solid #ccc;
+    padding:20px 0;
 }
 
 .single-projects #main{

@@ -17,6 +17,8 @@ function addMarkerInfoWindow(post) {
         '<h4>' + post.title + '</h4>' +
         '<p>' + post.location + '</p>' +
         '<a href="' + post.link + '">Property Details</a>' +
+        '<span> | </span>' +
+        '<a href="' + post.link + '">Check Availability</a>' +
         '</div>';
     var infowindow = new google.maps.InfoWindow({
         content: contentString
@@ -25,7 +27,7 @@ function addMarkerInfoWindow(post) {
         infowindow.open(map, post.marker);
     });
     marker.addListener('mouseout', function() {
-        infowindow.close(map, post.marker);
+        // infowindow.close(map, post.marker);
     });
     post.infoWindow = infowindow;
 }
@@ -100,6 +102,16 @@ function filterMapMarkers(type){
     addMapMarkers(type);
 }
 
+function removeMapInfoWindows(){
+    for(var key in markers) {
+        var obj = markers[key];
+        if(obj.infoWindow){
+            console.log(obj);
+            makeMarkerInactive(obj.ID);
+        }
+    }
+}
+
 function initMap() {
     var uluru = {lat: 38.89511, lng: -77.03637};
     map = new google.maps.Map(document.getElementById('projects-map'), {
@@ -108,6 +120,10 @@ function initMap() {
         scrollwheel:  false
     });
     addMapMarkers();
+
+    map.addListener('click', function() {
+        removeMapInfoWindows();
+    });
 }
 
 jQuery( document ).ready(function() {
@@ -156,7 +172,7 @@ jQuery( document ).ready(function() {
         makeMarkerActive(id);
     }).mouseleave(function() {
         var id = jQuery(this).attr('data-project-id');
-        makeMarkerInactive(id);
+        // makeMarkerInactive(id);
     });
 
 });
