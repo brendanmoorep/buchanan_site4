@@ -16,10 +16,15 @@ function addMarkerInfoWindow(post) {
     var contentString = '<div class="info-window">' +
         '<h4>' + post.title + '</h4>' +
         '<p>' + post.location + '</p>' +
-        '<a href="' + post.link + '">Property Details</a>' +
-        '<span> | </span>' +
-        '<a href="' + post.link + '">Check Availability</a>' +
-        '</div>';
+        '<a target="_blank" href="' + post.link + '">Property Details</a>';
+    if(post.properties.length && post.properties.length > 0){
+        contentString += '<span> | </span>';
+        contentString += '<a target="_blank" href="' + post.link + '">' + post.properties.length + ' available properties</a>';
+    }
+    contentString += '<br />';
+    contentString += '<a target="_blank" href="' + post.buchanan_properties_link + '">See all available properties</a>';
+    contentString += '</div>';
+
     var infowindow = new google.maps.InfoWindow({
         content: contentString
     });
@@ -172,7 +177,7 @@ jQuery( document ).ready(function() {
         makeMarkerActive(id);
     }).mouseleave(function() {
         var id = jQuery(this).attr('data-project-id');
-        // makeMarkerInactive(id);
+        makeMarkerInactive(id);
     });
 
 });

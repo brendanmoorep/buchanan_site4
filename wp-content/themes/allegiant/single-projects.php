@@ -53,25 +53,38 @@
                 <div id="content" class="content">
                     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="page-content">
-                            <h1><?php the_title(); ?></div></h1>
-                        <?php the_content(); ?>
+                            <h2><?php the_title(); ?></h2>
+                            <h4><span class="glyphicon glyphicon-map-marker"></span><?php the_cfc_field('project_location', 'location'); ?></h4>
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                     <div id="properties-wrapper">
                         <?php
                             $properties_meta = get_cfc_meta( 'properties' ); // all values in properties field custom meta box
+                            echo !empty($properties_meta) ? '<h3 class="blue-heading">Available Properties</h3>' : '<p>There are currently no available properties for lease</p>';
                             foreach($properties_meta as $key => $value):
                                 $property_image = get_cfc_field( 'properties','property_images', false, $key );
-                                //debugg($property_image);
                             ?>
-                                <article class="">
-                                    <div>
-                                        <h4><?php echo $properties_meta[$key]['properties_title']; ?></h4>
+                                <article class="available-property col-md-12">
+                                    <div class="property-image-wrapper" style="background-image: url('<?php echo $property_image['sizes']['medium']; ?>'); background-size: cover; background-position: undefined;">
+                                        <span>For Lease</span>
+                                    </div>
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <h3><?php echo $properties_meta[$key]['properties_title']; ?></h3>
                                         <p><?php echo $properties_meta[$key]['properties_description']; ?></p>
-                                        <img src="<?php echo $property_image['sizes']['medium']; ?>" />
+                                        <div class="property-item">
+                                            <?php echo isset($properties_meta[$key]['sqft']) ? '<div class="col-md-2"><div class="icon-wrapper"><span class="glyphicon glyphicon-th-large"></span></div><p>' . $properties_meta[$key]['sqft'] . ' sqft</p></div>' : ""; ?>
+                                            <?php echo isset($properties_meta[$key]['rate']) ? '<div class="col-md-2"><div class="icon-wrapper"><span class="glyphicon glyphicon-usd"></span></div><p><span>$</span><span>' .  $properties_meta[$key]['rate'] . '</span> /mo</p></div>' : ""; ?>
+                                            <div class="col-md-8">
+                                                <div class="icon-wrapper"><span class="glyphicon glyphicon-map-marker"></span></div>
+                                                <p><?php the_cfc_field('project_location', 'location'); ?></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="btn_wrapper"><a href="" class="property-contact-btn">Contact Info</a><span class="glyphicon glyphicon-arrow-right"></span></div>
                                     </div>
                                 </article>
                         <?php
-                                //debugg($property_image);
                             endforeach;
                         ?>
                     </div>
@@ -82,7 +95,34 @@
         </div>
 	</div>
 </div>
+<div id="project-single-map"></div>
+<script>
+    function initMap() {
+        var marker, map;
+        var location = '<?php the_cfc_field('project_location', 'location') ; ?>';
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode( { 'address': location }, function(results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                map = new google.maps.Map(document.getElementById('project-single-map'), {
+                    zoom: 14,
+                    center: results[0].geometry.location,
+                    scrollwheel:  false,
+                    styles : getMapTheme()
+                });
+                marker = new google.maps.Marker({
+                    position: results[0].geometry.location,
+                    map: map,
+                    icon:'/wp-content/uploads/2017/06/diamond-light-1.png'
+                });
+                var infowindow = new google.maps.InfoWindow({
+                    content: location
+                });
+                infowindow.open(map, marker);
+            }
+        });
 
+    }
+</script>
     <script>
         jQuery(".carousel-control.left").click(function() {
             jQuery("#header-carousel").carousel('pause');
@@ -93,5 +133,5 @@
             jQuery("#header-carousel").carousel('next');
         });
     </script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvsunr_JTCCR55es0vf3c8zO0kjwl35nk&callback=initMap"></script>
 <?php get_footer(); ?>

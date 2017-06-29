@@ -50,7 +50,7 @@ function theme_js() {
     wp_enqueue_script("jquery");
     wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
     wp_enqueue_script( 'my_custom_js', get_template_directory_uri() . '/buchananpartners/lib/shuffle.min.js');
-    // wp_enqueue_script( 'my_custom_js', get_template_directory_uri() . '/js/scripts.js');
+    wp_enqueue_script( 'map_themes', get_template_directory_uri() . '/buchananpartners/js/theme.js');
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_js');

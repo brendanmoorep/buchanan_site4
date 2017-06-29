@@ -39,7 +39,7 @@
                     <?php cpotheme_grid($foundersQuery->posts, 'element', 'team', 3); ?>
                 </div>
                 <div id="principles">
-                    <h3>Our Principles</h3>
+                    <h3>Our Principals</h3>
                     <?php cpotheme_grid($principlesQuery->posts, 'element', 'team', 4); ?>
                 </div>
                 <div id="the-team">

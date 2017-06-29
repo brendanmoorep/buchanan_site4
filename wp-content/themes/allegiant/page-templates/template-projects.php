@@ -75,12 +75,15 @@
                                         }
                                         $post->termsAttr = $termsAttr;
                                         get_template_part('template-parts/element-shuffle-project', esc_attr('project'));
+                                        $properties = get_cfc_meta( 'properties' );
                                         $marker = array(
                                             'ID' => $post->ID,
                                             'title' => $post->post_title,
                                             'location'=> get_cfc_field('project_location', 'location', $post->ID),
                                             'categories' => $termsAttr,
-                                            'link' => get_permalink()
+                                            'link' => get_permalink(),
+                                            'properties' => $properties, // this will be empty array if none entered
+                                            'buchanan_properties_link' => get_permalink(3639)
                                         );
                                         $mapMarkers[$post->ID] = $marker;
                                     endforeach;

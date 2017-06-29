@@ -3,6 +3,44 @@ Theme Name:Buchanan Partners
 Author:Brendan Moore-Penaskovic
 Version:1.0.0
 */
+/* TYPEOGRAPHY */
+.blue-heading{
+    color:#205582;
+}
+h3.blue-heading{
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    font-size: 22px;
+}
+.gray-border-bottom{
+    border-bottom:1px solid #e8e8e8;
+}
+#content h2{
+    color:#205582;
+    margin-bottom:15px;
+}
+.page-content{
+    margin-bottom:50px;
+}
+.page-content h4{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.page-content h4 span{
+    color:#205582;
+    margin-right: 6px;
+    font-size: 16px;
+}
+.page-content p{
+    font-weight: 300;
+    font-size:16px;
+    line-height: 1.4em;
+    margin-bottom:25px;
+    margin-left:10px;
+}
+
 .gray-box-full-width{
     border-bottom: 1px solid #e4e4e4;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -60,8 +98,9 @@ button:active {
 }
 #portfolio{
     padding:0;
-    height:400px;
+    height:600px;
     overflow-y:auto;
+    overflow-x:hidden;
 }
 #projects-map{
     width:100%;
@@ -148,8 +187,10 @@ h3.portfolio-item-title {
     margin-bottom: 20px;
 }
 
-#single-team-member .page-content p{
+.page-content p{
     font-weight: 300;
+    font-size:16px;
+    line-height: 1.4em;
 }
 /* template-projects */
 
@@ -167,14 +208,111 @@ h3.portfolio-item-title {
 
 /* Single-Projects STYLES */
 
+.available-property{
+    background: #eef1f5;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    padding:15px 0 0 0;
+    margin-bottom:20px;
+    position: relative;
+}
+.available-property img{
+    width:100%;
+    height:auto;
+}
+.available-property h3{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 21px;
+    color: #205582;
+}
 .single-projects .content{
     width:100%;
 }
 
 #properties-wrapper{
-    margin-top:40px;
-    border-top:1px solid #ccc;
+    /*margin-top:20px;*/
+    /*border-top:1px solid #e3e2e2;*/
     padding:20px 0;
+}
+
+#properties-wrapper h2{
+    margin-top:0;
+}
+.property-item{
+    text-align:center;
+    margin-left:-15px;
+    margin-right:-15px;
+    border-top:1px solid #d9dede;
+}
+.property-item > div{
+    padding:10px 0;
+    color: #858585;
+    border-left: 1px solid #d9dede;
+}
+.properties .available-property .text-content{
+    min-height:100px;
+}
+.property-item > div:last-of-type{
+    border-right: 1px solid #d9dede;
+}
+
+.property-image-wrapper{
+    position: absolute;
+    top:0;
+    left:0;
+    width:33.33%;
+    height:100%;
+}
+
+.property-image-wrapper span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px 6px;
+    background: #23527c;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+.property-item p{
+    margin:0;
+}
+
+.available-property .btn_wrapper{
+    margin-left:-15px;
+    margin-right:-15px;
+    background: #23527c;
+    text-align: center;
+    padding:10px;
+    position: relative;
+    color:white;
+    cursor:pointer;
+}
+.available-property .btn_wrapper a{
+    color:inherit;
+    text-transform: uppercase;
+}
+.available-property .btn_wrapper span:before{
+    position: relative;
+    top: 12px;
+}
+
+.available-property .btn_wrapper span{
+    background:#0363a7;
+    position: absolute;
+    height:100%;
+    width:40px;
+    top:0;
+    right:0;
+    color:white;
+}
+
+.property-item .icon-wrapper{
+    color:#23527c;
 }
 
 .single-projects #main{
@@ -193,10 +331,14 @@ h3.portfolio-item-title {
     position: absolute;
 }
 
+#project-single-map{
+    width:100%;
+    height:400px;
+}
+
 /* CONTACT US STYLES */
 #contact-info{
     padding:50px 0;
-    background:red;
 }
 
 #contact-info p{
@@ -213,9 +355,7 @@ h3.portfolio-item-title {
     border-radius: 100px;
     padding-top: 18px;
 }
-#content h2{
-    color:#205582;
-}
+
 #contact-us-page label{
     color:#205582;
 }
