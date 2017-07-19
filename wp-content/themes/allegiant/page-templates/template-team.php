@@ -18,6 +18,7 @@
             <?php
             $nonPrincipalArgs = array(
                 'post_type' => 'cpo_team',
+                'posts_per_page'=>-1,
                 'meta_query' => array(
                 array(
                     'key' => 'team_founding_principal',
