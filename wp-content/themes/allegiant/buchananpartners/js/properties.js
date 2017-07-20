@@ -1,12 +1,20 @@
+var mapsLoaded = false;
+
+function googleMapsLoaded(){
+    console.log('maps loaded');
+    mapsLoaded = true;
+}
+
 jQuery( document ).ready(function() {
+    var Shuffle = window.shuffle;
     function isEntered(value){
         return !isNaN(parseInt(value));
     }
-    var Shuffle = window.shuffle;
+
     var myShuffle = new Shuffle(jQuery('.shuffle-container'), {
         itemSelector: '.available-property',
-        sizer: '#shuffle-sizer',
-        buffer: 1,
+        sizer: '.properties #shuffle-sizer',
+        isCentered:true
     });
 
     jQuery('.available-property .btn_wrapper a').click(function(e){
@@ -91,6 +99,89 @@ jQuery( document ).ready(function() {
         }
 
         myShuffle.filter(filterFunction);
+    });
+
+    /* DISTANCE FROM ADDRESS */
+    function sortPropertiesByDistance(){
+        console.log('sort');
+        myShuffle.sort({
+            by: function(element){
+                return element.getAttribute('data-distance');
+            }
+        })
+    }
+
+    jQuery('#zipcode-sort').change(function(geocoder){
+        function getDistanceBetween(p1, p2){
+            function getMiles(i) {
+                return i*0.000621371192;
+            }
+            var rad = function(x) {
+                return x * Math.PI / 180;
+            };
+
+            p2.lat = (typeof p2.lat === "function") ? p2.lat() : p2.lat;
+            p2.lng = (typeof p2.lng === "function") ? p2.lng() : p2.lng;
+
+            var R = 6378137; // Earth’s mean radius in meter
+            var dLat = rad(p2.lat - p1.lat());
+            var dLong = rad(p2.lng - p1.lng());
+            var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(rad(p1.lat())) * Math.cos(rad(p2.lat)) *
+                Math.sin(dLong / 2) * Math.sin(dLong / 2);
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            var d = R * c;
+            return Math.round(getMiles(d)); // returns the distance in meter
+        }
+        function setLocationAttributes(property,geoCodedAddress, location){
+            var distance = getDistanceBetween(geoCodedAddress, location);
+            property.attr('data-distance', distance);
+            property.find('.mileage-indicator').html('<div class="glyphicon glyphicon-map-marker padding-right"></div>' + distance + ' miles').show();
+        }
+        function getPropertiesLocations(geocoder, geoCodedAddress){
+            var properties = jQuery('.available-property');
+            var totalProperties = properties.length - 1;
+            properties.each(function(i){
+                var property = jQuery(this);
+                if(property.attr('data-geolocation') !== undefined){
+                    var location = JSON.parse(property.attr('data-geolocation'));
+                    setLocationAttributes(property,geoCodedAddress, location);
+                    if(i === totalProperties){
+                        sortPropertiesByDistance();
+                    }
+                }else{
+                    var address = property.attr('data-location');
+                    geocoder.geocode( { 'address': address }, function(results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            var location = results[0].geometry.location;
+                            property.attr('data-geoLocation', JSON.stringify({
+                                lat : location.lat(),
+                                lng : location.lng()
+                            }));
+                            setLocationAttributes(property,geoCodedAddress, location);
+                            if(i === totalProperties){
+                                sortPropertiesByDistance();
+                            }
+                        }else{
+                            console.log('geocode failed',results, status);
+                        }
+                    });
+                }
+            });
+        }
+        var addressEntered = jQuery(this).val();
+        if(mapsLoaded){
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode( { 'address': addressEntered }, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    var geoCodedAddress = results[0].geometry.location;
+                    getPropertiesLocations(geocoder,geoCodedAddress);
+                }else{
+                    alert('Please enter a valid address');
+                }
+            });
+        }
+
     });
 
     // jQuery('.categories-list button').click(function(e){

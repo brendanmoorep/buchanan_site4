@@ -138,24 +138,22 @@ button:active {
     display:none;
 }
 #properties-page .shuffle-container{
-    /*display: -ms-flex;*/
-    /*display: -webkit-flex;*/
-    /*display:flex;*/
-    /*flex-grow:1;*/
-    /*flex: 1;*/
-    /*flex-wrap: wrap;*/
+    display: -ms-flex;
+    display: -webkit-flex;
+    display:flex;
+    flex-grow:1;
+    flex: 1;
+    flex-wrap: wrap;
 }
-#shuffle-sizer{
-    width:40%;
-    margin-right: 2%;
+.properties #shuffle-sizer{
+    width:48%;
+    margin-left: 2%;
+    display:inline-block;
+    float:left;
 }
-#properties-page .shuffle-container > div{
-    float: left;
-    position: relative;
-    width: 40%;
-}
-#properties-page .shuffle-container > div:nth-child(odd){
-    margin-right: 2%;
+.properties .available-property{
+    width:48%;
+    margin-left: 2%;
 }
 
 .portfolio-item{
@@ -281,6 +279,10 @@ h3.portfolio-item-title {
 .properties .available-property .text-content{
     min-height:100px;
 }
+.property-summary{
+    height:150px;
+    overflow:auto;
+}
 .property-item > div:last-of-type{
     border-right: 1px solid #d9dede;
 }
@@ -352,11 +354,27 @@ h3.portfolio-item-title {
     width:100%;
     background-color:rgba(59,130,194,.96);
     transition:left .2s ease;
-    display:none;
 }
 .available-property.active .property-contact-wrapper{
     left:0;
     transition:left .2s ease;
+}
+.property-contact-wrapper a{
+    color:#fff;
+}
+.dropdown-menu>li>a.no-padding{
+    padding:3px 12px;
+}
+
+.mileage-indicator{
+    border-top: 1px solid white;
+    font-size: 12px;
+    text-transform: lowercase;
+    display:none;
+}
+
+.mileage-indicator .padding-right{
+    padding-right:3px;
 }
 
 .property-contact-wrapper > span{

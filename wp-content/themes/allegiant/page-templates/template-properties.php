@@ -1,7 +1,7 @@
 <?php /* Template Name: Properties */ ?>
 <?php get_header(); ?>
 <?php
-$mapMarkers = [];
+    $mapMarkers = [];
 ?>
 <?php get_template_part('template-parts/element', 'page-header'); ?>
     <div class="gray-box-full-width">
@@ -33,6 +33,18 @@ $mapMarkers = [];
                             <li class="size-sort" data-sort-type="desc"><a>Descending</a></li>
                         </ul>
                     </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default">Distance from Address</button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span> <span class="sr-only"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="size-filter"><a class="no-padding"><input id="zipcode-sort" type="text"  class="form-control" placeholder="Enter an address" /></a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="size-sort" data-sort-type="asc"><a>Closest</a></li>
+                            <li class="size-sort" data-sort-type="desc"><a>Furthest</a></li>
+                        </ul>
+                    </div>
                 </div>
         </div>
     </div>
@@ -43,7 +55,6 @@ $mapMarkers = [];
                     <?php $query = new WP_Query('post_type=projects&order=ASC&orderby=menu_order'); ?>
                     <?php if($query->posts): ?>
                         <section id="properties-page" class="properties">
-                            <div class="row">
                                 <div class="shuffle-container">
                                     <?php
                                         $i=0;
@@ -53,18 +64,20 @@ $mapMarkers = [];
                                              foreach($properties_meta as $key => $value):
                                                 $property_image = get_cfc_field( 'properties','property_images', false, $key );
                                              ?>
-                                         <div class="available-property <?php echo isset($properties_meta[$key]['property-type']) ? $properties_meta[$key]['property-type'] : ''; ?>"  data-sqft="<?php echo $properties_meta[$key]['sqft']; ?>" data-price="<?php echo $properties_meta[$key]['rate']; ?>">
+                                         <div class="available-property <?php echo isset($properties_meta[$key]['property-type']) ? $properties_meta[$key]['property-type'] : ''; ?>"  data-sqft="<?php echo $properties_meta[$key]['sqft']; ?>" data-price="<?php echo $properties_meta[$key]['rate']; ?>" data-location="<?php the_cfc_field('project_location', 'location'); ?>">
                                              <div class="property-image-wrapper" style="background-image: url('<?php echo $property_image['sizes']['medium']; ?>'); background-size: cover; background-position: undefined;">
                                                  <?php
                                                     if(isset($properties_meta[$key]['availability-type'])){
-                                                        echo '<span>For ' . $properties_meta[$key]['availability-type'] . '</span>';
+                                                        echo '<span>For ' . $properties_meta[$key]['availability-type'] . '<div class="mileage-indicator"></div></span>';
                                                     }
                                                   ?>
                                              </div>
                                              <div class="col-md-8 col-md-offset-4">
                                                  <div class="text-content">
                                                     <h3><?php echo $properties_meta[$key]['properties_title']; ?></h3>
-                                                    <p><?php echo $properties_meta[$key]['properties_description']; ?></p>
+                                                     <div class="property-summary">
+                                                         <p><?php echo $properties_meta[$key]['properties_description']; ?></p>
+                                                     </div>
                                                  </div>
                                                  <div class="property-item">
                                                      <?php echo isset($properties_meta[$key]['sqft']) ? '<div class="col-md-2"><div class="icon-wrapper"><span class="glyphicon glyphicon-th-large"></span></div><p>' . $properties_meta[$key]['sqft'] . ' sqft</p></div>' : ""; ?>
@@ -116,7 +129,6 @@ $mapMarkers = [];
                                     ?>
                                     <span id="shuffle-sizer"></span>
                                 </div>
-                            </div>
                         </section>
                         <?php wp_reset_postdata(); ?>
                     <?php endif; ?>
@@ -126,4 +138,5 @@ $mapMarkers = [];
         </div><!-- end container-fluid -->
     </div>
     <script type="text/javascript" src="/wp-content/themes/allegiant/buchananpartners/js/properties.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvsunr_JTCCR55es0vf3c8zO0kjwl35nk&callback=googleMapsLoaded"></script>
 <?php get_footer(); ?>
