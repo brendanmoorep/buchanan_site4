@@ -8,8 +8,8 @@
         <div class="container">
                 <div class="filter-section">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default">Price</button>
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="btn btn-primary">Price</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="caret"></span> <span class="sr-only"></span>
                         </button>
                         <ul class="dropdown-menu">
@@ -21,8 +21,8 @@
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default">Sq/Ft</button>
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="btn btn-primary">Sq/Ft</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="caret"></span> <span class="sr-only"></span>
                         </button>
                         <ul class="dropdown-menu">
@@ -34,8 +34,8 @@
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default">Distance from Address</button>
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="btn btn-primary">Distance from Address</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="caret"></span> <span class="sr-only"></span>
                         </button>
                         <ul class="dropdown-menu">
