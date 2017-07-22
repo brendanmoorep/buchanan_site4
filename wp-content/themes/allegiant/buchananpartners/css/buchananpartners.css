@@ -4,6 +4,37 @@ Author:Brendan Moore-Penaskovic
 Version:1.0.0
 */
 /* TYPEOGRAPHY */
+body{
+    /*-webkit-font-smoothing: antialiased;*/
+    /*-moz-osx-font-smoothing: grayscale;*/
+}
+.pagetitle{
+    background-attachment: fixed;
+}
+.pagetitle .container{
+    position: relative;
+    z-index:1;
+}
+.pagetitle .pagetitle-title{
+    text-align: left;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.pagetitle p{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+}
+.pagetitle .title-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.5);
+    height: 100%;
+    width:100%;
+    z-index:0;
+}
 .blue-heading{
     color:#205582;
 }
@@ -128,6 +159,7 @@ button:active {
 .dropdown-menu li{
     list-style: none;
     margin:0;
+    cursor:pointer;
 }
 
 .content{
@@ -271,10 +303,13 @@ h3.portfolio-item-title {
     margin-right:-15px;
     border-top:1px solid #d9dede;
 }
+.property-item > div p{
+    font-size:14px;
+    font-weight:300;
+}
 .property-item > div{
     padding:10px 0;
     color: #858585;
-    border-left: 1px solid #d9dede;
 }
 .properties .available-property .text-content{
     min-height:100px;
@@ -282,9 +317,6 @@ h3.portfolio-item-title {
 .property-summary{
     height:150px;
     overflow:auto;
-}
-.property-item > div:last-of-type{
-    border-right: 1px solid #d9dede;
 }
 
 .property-image-wrapper{
@@ -373,6 +405,60 @@ h3.portfolio-item-title {
     display:none;
 }
 
+.property-type-indicator{
+    position: absolute;
+    top: 0;
+    padding: 3px 6px;
+    left: 100%;
+}
+#clear-filters{
+    margin-left:10px;
+    cursor:pointer;
+}
+#clear-filters:hover{
+    color:#28a4c9;
+}
+#clear-filters span{
+    position: relative;
+    top: 3px;
+    font-size: 17px;
+    left: 3px;
+}
+.office.type-filter{
+    color:purple;
+}
+.industrial.type-filter{
+    color:#e38d13;
+}
+.residential.type-filter{
+    color:#89ce40;
+}
+.mixed.type-filter{
+    color:#28a4c9;
+}
+.land.type-filter{
+    color:#3e8f3e;
+}
+.office .property-type-indicator{
+    background:purple;
+}
+
+.industrial .property-type-indicator{
+    background:#e38d13;
+}
+
+.residential .property-type-indicator{
+    background:#89ce40;
+}
+
+.mixed .property-type-indicator{
+    background:#28a4c9;
+}
+
+.land .property-type-indicator{
+    background:#3e8f3e;
+}
+
 .mileage-indicator .padding-right{
     padding-right:3px;
 }
@@ -441,6 +527,7 @@ h3.portfolio-item-title {
 
 .property-item .icon-wrapper{
     color:#23527c;
+    font-size:18px;
 }
 
 .single-projects #main{

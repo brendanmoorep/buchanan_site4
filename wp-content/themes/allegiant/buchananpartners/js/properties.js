@@ -29,6 +29,12 @@ jQuery( document ).ready(function() {
         jQuery(this).closest('.available-property').removeClass('active');
     });
 
+    /* CLEAR ALL FILTERS */
+    jQuery('#clear-filters').click(function(){
+       myShuffle.sort({});
+       myShuffle.filter();
+    });
+
     /* PRICE SORT / FILTER */
     jQuery('.price-sort').click(function(){
        var type = jQuery(this).attr('data-sort-type');
@@ -183,6 +189,35 @@ jQuery( document ).ready(function() {
         }
 
     });
+
+    /* PROPERTY TYPES FILTER */
+    function createPropTypeFilter(types){
+        function capFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+        var wrapper = jQuery('#property-type-wrapper .dropdown-menu');
+        for (var prop in types) {
+            var li = ' <li class="type-filter '+ types[prop] +'" data-filter-type="' + types[prop] + '"><a>' + capFirstLetter(types[prop]) + '</a></li>';
+            wrapper.append(li);
+        }
+    }
+
+    function addPropTypeFilterEvents(){
+        jQuery('#property-type-wrapper .dropdown-menu li').click(function () {
+            var type = jQuery(this).attr('data-filter-type');
+            myShuffle.filter(function(element){
+                return element.getAttribute('data-property-type') === type;
+            });
+        })
+    }
+
+    //propertyTypes variable is set in template-properties.php as global var
+    //propertyTypes = JSON.parse(propertyTypes);
+    if(propertyTypes){
+        createPropTypeFilter(propertyTypes);
+        addPropTypeFilterEvents();
+    }
+
 
     // jQuery('.categories-list button').click(function(e){
     //     jQuery('#taxonomies-filter button').removeClass('active');

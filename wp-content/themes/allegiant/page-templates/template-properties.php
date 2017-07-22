@@ -45,6 +45,14 @@
                             <li class="size-sort" data-sort-type="desc"><a>Furthest</a></li>
                         </ul>
                     </div>
+                    <div id="property-type-wrapper" class="btn-group">
+                        <button type="button" class="btn btn-primary">Property Type</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span> <span class="sr-only"></span>
+                        </button>
+                        <ul class="dropdown-menu"></ul>
+                    </div>
+                    <span id="clear-filters">Clear All <span class="glyphicon glyphicon-remove-circle"></span></span>
                 </div>
         </div>
     </div>
@@ -52,23 +60,25 @@
         <div class="row">
             <div>
                 <section>
-                    <?php $query = new WP_Query('post_type=projects&order=ASC&orderby=menu_order'); ?>
+                    <?php $query = new WP_Query('post_type=projects&order=ASC&orderby=menu_order&posts_per_page=-1'); ?>
                     <?php if($query->posts): ?>
                         <section id="properties-page" class="properties">
                                 <div class="shuffle-container">
                                     <?php
+                                        $propertyTypes = [];
                                         $i=0;
                                         foreach($query->posts as $post):
                                             setup_postdata($post);
                                             $properties_meta = get_cfc_meta( 'properties' );
                                              foreach($properties_meta as $key => $value):
                                                 $property_image = get_cfc_field( 'properties','property_images', false, $key );
+                                                 $propertyTypes[$properties_meta[$key]['property-type']] = $properties_meta[$key]['property-type'];
                                              ?>
-                                         <div class="available-property <?php echo isset($properties_meta[$key]['property-type']) ? $properties_meta[$key]['property-type'] : ''; ?>"  data-sqft="<?php echo $properties_meta[$key]['sqft']; ?>" data-price="<?php echo $properties_meta[$key]['rate']; ?>" data-location="<?php the_cfc_field('project_location', 'location'); ?>">
+                                         <div class="available-property <?php echo isset($properties_meta[$key]['property-type']) ? $properties_meta[$key]['property-type'] : ''; ?>"  data-sqft="<?php echo $properties_meta[$key]['sqft']; ?>" data-price="<?php echo $properties_meta[$key]['rate']; ?>" data-location="<?php the_cfc_field('project_location', 'location'); ?>" data-property-type="<?php echo $properties_meta[$key]['property-type']; ?>">
                                              <div class="property-image-wrapper" style="background-image: url('<?php echo $property_image['sizes']['medium']; ?>'); background-size: cover; background-position: undefined;">
                                                  <?php
                                                     if(isset($properties_meta[$key]['availability-type'])){
-                                                        echo '<span>For ' . $properties_meta[$key]['availability-type'] . '<div class="mileage-indicator"></div></span>';
+                                                        echo '<span>For ' . $properties_meta[$key]['availability-type'] . '<div class="mileage-indicator"></div><div class="property-type-indicator">' . $properties_meta[$key]['property-type'] . '</div></span>';
                                                     }
                                                   ?>
                                              </div>
@@ -80,9 +90,9 @@
                                                      </div>
                                                  </div>
                                                  <div class="property-item">
-                                                     <?php echo isset($properties_meta[$key]['sqft']) ? '<div class="col-md-2"><div class="icon-wrapper"><span class="glyphicon glyphicon-th-large"></span></div><p>' . $properties_meta[$key]['sqft'] . ' sqft</p></div>' : ""; ?>
-                                                    <admin></admin> <?php echo isset($properties_meta[$key]['rate']) ? '<div class="col-md-2"><div class="icon-wrapper"><span class="glyphicon glyphicon-usd"></span></div><p><span>$</span><span>' .  $properties_meta[$key]['rate'] . '</span> /mo</p></div>' : ""; ?>
-                                                     <div class="col-md-8">
+                                                     <?php echo isset($properties_meta[$key]['sqft']) ? '<div class="col-md-3"><div class="icon-wrapper"><span class="glyphicon glyphicon-th-large"></span></div><p>' . $properties_meta[$key]['sqft'] . ' sqft</p></div>' : ""; ?>
+                                                    <admin></admin> <?php echo isset($properties_meta[$key]['rate']) ? '<div class="col-md-3"><div class="icon-wrapper"><span class="glyphicon glyphicon-usd"></span></div><p><span>$</span><span>' .  $properties_meta[$key]['rate'] . '</span> /mo</p></div>' : ""; ?>
+                                                     <div class="col-md-6">
                                                          <div class="icon-wrapper"><span class="glyphicon glyphicon-map-marker"></span></div>
                                                          <p><?php the_cfc_field('project_location', 'location'); ?></p>
                                                      </div>
@@ -118,12 +128,6 @@
                                              </div>
                                          </div>
                                     <?php
-                                             if($i == 1 ) {
-                                                 $i = 0;
-                                                 // echo '<div class="clear"></div>';
-                                             }else{
-                                                 $i++;
-                                             }
                                              endforeach;
                                          endforeach;
                                     ?>
@@ -137,6 +141,9 @@
             </div>
         </div><!-- end container-fluid -->
     </div>
+<script>
+    var propertyTypes = <?php echo json_encode($propertyTypes); ?>;
+</script>
     <script type="text/javascript" src="/wp-content/themes/allegiant/buchananpartners/js/properties.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvsunr_JTCCR55es0vf3c8zO0kjwl35nk&callback=googleMapsLoaded"></script>
 <?php get_footer(); ?>
