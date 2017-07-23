@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="587dd44c-9354-429b-9fc7-a925032ea18b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-about-us.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/properties.js" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/properties.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-page-header.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-page-header.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,14 +15,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43225014">
+    <splitter split-orientation="horizontal" split-proportion="0.59411407">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="template-properties.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="template-properties.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="627">
-                  <caret line="54" column="43" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="43" />
+                <state relative-caret-position="537">
+                  <caret line="48" column="67" lean-forward="false" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
                   <folding>
                     <marker date="1500757549000" expanded="true" signature="6733:6900" ph="..." />
                     <marker date="1500757549000" expanded="true" signature="6809:6900" ph="..." />
@@ -42,11 +40,31 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="template-about-us.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-about-us.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="template-services.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-services.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="template-team.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="489">
-                  <caret line="33" column="149" lean-forward="true" selection-start-line="33" selection-start-column="134" selection-end-line="33" selection-end-column="152" />
+                  <caret line="33" column="149" lean-forward="false" selection-start-line="33" selection-start-column="134" selection-end-line="33" selection-end-column="152" />
                   <folding />
                 </state>
               </provider>
@@ -88,11 +106,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="properties.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="properties.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/properties.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="394">
-                  <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+                  <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
                   <folding>
                     <element signature="e#2387#2676#0" expanded="false" />
                     <element signature="e#2730#3636#0" expanded="false" />
@@ -104,11 +122,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="buchananpartners.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="buchananpartners.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="320">
-                  <caret line="417" column="0" lean-forward="false" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="14" />
+                <state relative-caret-position="657">
+                  <caret line="716" column="17" lean-forward="false" selection-start-line="716" selection-start-column="17" selection-end-line="716" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -155,8 +173,8 @@
       <find>js</find>
       <find>page-title</find>
       <find>dropdown</find>
-      <find>element.</find>
       <find>purple</find>
+      <find>element.</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/wp-content/themes</dir>
@@ -215,8 +233,9 @@
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-projects.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-page-header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/properties.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-about-us.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" />
       </list>
     </option>
   </component>
@@ -385,14 +404,15 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates" />
       <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js" />
       <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts" />
       <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/lib" />
       <recent name="$PROJECT_DIR$/wp-content/themes/allegiant" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -512,12 +532,12 @@
       <workItem from="1500503817880" duration="12271000" />
       <workItem from="1500596704651" duration="839000" />
       <workItem from="1500634833817" duration="63000" />
-      <workItem from="1500739727253" duration="10751000" />
+      <workItem from="1500739727253" duration="12775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160109000" />
+    <option name="totallyTimeSpent" value="162133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1124" extended-state="6" />
@@ -562,20 +582,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-portfolio.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -894,7 +900,7 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
-          <caret line="33" column="149" lean-forward="true" selection-start-line="33" selection-start-column="134" selection-end-line="33" selection-end-column="152" />
+          <caret line="33" column="149" lean-forward="false" selection-start-line="33" selection-start-column="134" selection-end-line="33" selection-end-column="152" />
           <folding />
         </state>
       </provider>
@@ -907,10 +913,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="974">
+          <caret line="142" column="25" lean-forward="false" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/properties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#2387#2676#0" expanded="false" />
+            <element signature="e#2730#3636#0" expanded="false" />
+            <element signature="e#6642#6744#0" expanded="false" />
+            <element signature="e#8454#8509#0" expanded="false" />
+            <element signature="e#9675#9727#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="54" column="43" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="43" />
+        <state relative-caret-position="537">
+          <caret line="48" column="67" lean-forward="false" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
           <folding>
             <marker date="1500757549000" expanded="true" signature="6733:6900" ph="..." />
             <marker date="1500757549000" expanded="true" signature="6809:6900" ph="..." />
@@ -927,33 +955,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-about-us.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="417" column="0" lean-forward="false" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="14" />
+        <state relative-caret-position="657">
+          <caret line="716" column="17" lean-forward="false" selection-start-line="716" selection-start-column="17" selection-end-line="716" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/projects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="974">
-          <caret line="142" column="25" lean-forward="false" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/properties.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#2387#2676#0" expanded="false" />
-            <element signature="e#2730#3636#0" expanded="false" />
-            <element signature="e#6642#6744#0" expanded="false" />
-            <element signature="e#8454#8509#0" expanded="false" />
-            <element signature="e#9675#9727#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

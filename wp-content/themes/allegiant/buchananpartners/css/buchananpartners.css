@@ -10,6 +10,7 @@ body{
 }
 .pagetitle{
     background-attachment: fixed;
+    max-height:500px;
 }
 .pagetitle .container{
     position: relative;
@@ -93,9 +94,6 @@ body.custom-background{
 .main-bg a, .main-bg a:visited{
     color:#fff;
 }
-.main-bg a:hover{
-
-}
 .center{
     text-align:center;
 }
@@ -110,6 +108,20 @@ button:active {
 
 .hide{
     display:none;
+}
+
+.btn-transparent{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #2a88bf;
+    background-color:transparent;
+    text-decoration: none;
+}
+
+.btn-transparent:hover{
+    background-color:#2a88bf;
+    transition:background-color .3s ease;
+    color:#fff;
 }
 
 /*
@@ -699,6 +711,23 @@ h3.portfolio-item-title {
 
 .field {
     float:left; margin-right: 40px; width: 150px; padding-top: 15px;
+}
+
+/* ABOUT US - SERVICES */
+#about-us-page h2{
+    font-size:40px;
+}
+#about-us-page{
+    padding: 40px 0;
+}
+.page-template-template-about-us .services{
+    border-top:1px solid #205582;
+    padding:20px 0 10px;
+}
+
+.services > h2{
+    color: #205582;
+    margin-bottom: 35px;
 }
 
 @media (max-width: 767px) {
