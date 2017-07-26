@@ -13,21 +13,30 @@
                     </div>
                 <?php endwhile; ?>
             </section>
-            <?php //get_sidebar(); ?>
+            <div id="bubbles">
+                <div class="circle">
+                    <h3>Founded in 1998</h3>
+                    <div class="circle">
+                        <h3>Over 1,200 active properies</h3>
+                        <div class="circle">
+                            <h3>Over 5 million sq/ft of commercial properties</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="clear"></div>
-            <section class="services-container">
-<!--                <div class="container">-->
-<!--                    <div class="row">-->
-<!--                        -->
-                <?php if(get_query_var('paged')) $current_page = get_query_var('paged'); else $current_page = 1; ?>
-                <?php $query = new WP_Query('post_type=cpo_service&paged='.$current_page.'&posts_per_page=-1&order=ASC&orderby=menu_order'); ?>
+        </div>
+        <div class="services-container">
+            <div class="container">
+                <section>
+                    <?php if(get_query_var('paged')) $current_page = get_query_var('paged'); else $current_page = 1; ?>
+                    <?php $query = new WP_Query('post_type=cpo_service&paged='.$current_page.'&posts_per_page=-1&order=ASC&orderby=menu_order'); ?>
                     <section id="services" class="services">
-                        <h2>Our Expertise</h2>
+                        <h2>Core Services</h2>
                         <?php cpotheme_grid($query->posts, 'element', 'service', 3); ?>
                     </section>
-<!--                    </div>-->
-<!--                </div>-->
-            </section>
+                </section>
+            </div>
         </div>
-     </div>
+    </div>
 <?php get_footer(); ?>
