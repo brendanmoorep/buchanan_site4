@@ -12,7 +12,6 @@ function makeMarkerInactive(id){
 
 function addMarkerInfoWindow(post) {
     var marker = post.marker;
-    console.log(post);
     var contentString = '<div class="info-window">' +
         '<h4>' + post.title + '</h4>' +
         '<p>' + post.location + '</p>' +
@@ -25,6 +24,13 @@ function addMarkerInfoWindow(post) {
     contentString += '<a target="_blank" href="' + post.buchanan_properties_link + '">See all available properties</a>';
     contentString += '</div>';
 
+    var infoWinTimeout;
+    function closeInfoWindow(window){
+        jQuery('.info-window').removeClass('active');
+        setTimeout(function(){
+            window.close();
+        },300);
+    }
     var infowindow = new google.maps.InfoWindow({
         content: contentString
     });
@@ -32,9 +38,21 @@ function addMarkerInfoWindow(post) {
         infowindow.open(map, post.marker);
     });
     marker.addListener('mouseout', function() {
-        // infowindow.close(map, post.marker);
+        infoWinTimeout = setTimeout(function(){
+           closeInfoWindow(infowindow);
+        }, 500);
+    });
+    google.maps.event.addListener(infowindow, 'domready', function(e){
+        jQuery('.info-window').addClass('active');
+        jQuery('.info-window').on('mouseenter', function(e){
+            clearTimeout(infoWinTimeout);
+        }).on('mouseleave', function(e){
+            clearTimeout(infoWinTimeout);
+            closeInfoWindow(infowindow);
+        });
     });
     post.infoWindow = infowindow;
+
 }
 
 function addMapMarker(obj, ligthen){
@@ -93,8 +111,10 @@ function addMapMarkers(type){
 function removeMapMarkers(id){
     if(id){
         var obj = markers[id];
-        obj.marker.setMap(null);
-        return;
+        if(obj.marker){
+            obj.marker.setMap(null);
+            return;
+        }
     }
     for(var key in markers) {
         var obj = markers[key];
@@ -122,7 +142,8 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('projects-map'), {
         zoom: 10,
         center: uluru,
-        scrollwheel:  false
+        scrollwheel:  false,
+        styles: [ { "featureType": "administrative", "elementType": "all", "stylers": [ { "visibility": "on" }, { "lightness": 33 } ] }, { "featureType": "administrative", "elementType": "labels", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "administrative", "elementType": "labels.text", "stylers": [ { "gamma": "0.75" } ] }, { "featureType": "administrative.neighborhood", "elementType": "labels.text.fill", "stylers": [ { "lightness": "-37" } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "color": "#f9f9f9" } ] }, { "featureType": "landscape.man_made", "elementType": "geometry", "stylers": [ { "saturation": "-100" }, { "lightness": "40" }, { "visibility": "off" } ] }, { "featureType": "landscape.natural", "elementType": "labels.text.fill", "stylers": [ { "saturation": "-100" }, { "lightness": "-37" } ] }, { "featureType": "landscape.natural", "elementType": "labels.text.stroke", "stylers": [ { "saturation": "-100" }, { "lightness": "100" }, { "weight": "2" } ] }, { "featureType": "landscape.natural", "elementType": "labels.icon", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "poi", "elementType": "geometry", "stylers": [ { "saturation": "-100" }, { "lightness": "80" } ] }, { "featureType": "poi", "elementType": "labels", "stylers": [ { "saturation": "-100" }, { "lightness": "0" } ] }, { "featureType": "poi.attraction", "elementType": "geometry", "stylers": [ { "lightness": "-4" }, { "saturation": "-100" } ] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [ { "color": "#c5dac6" }, { "visibility": "on" }, { "saturation": "-95" }, { "lightness": "62" } ] }, { "featureType": "poi.park", "elementType": "labels", "stylers": [ { "visibility": "on" }, { "lightness": 20 } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "lightness": 20 } ] }, { "featureType": "road", "elementType": "labels", "stylers": [ { "saturation": "-100" }, { "gamma": "1.00" } ] }, { "featureType": "road", "elementType": "labels.text", "stylers": [ { "gamma": "0.50" } ] }, { "featureType": "road", "elementType": "labels.icon", "stylers": [ { "saturation": "50" }, { "gamma": "0.2" } ] }, { "featureType": "road.highway", "elementType": "geometry", "stylers": [ { "color": "#40b9ff" }, { "saturation": "-100" } ] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [ { "lightness": "-13" } ] }, { "featureType": "road.highway", "elementType": "labels.icon", "stylers": [ { "lightness": "0" }, { "gamma": "1.09" } ] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [ { "color": "#40b9ff" }, { "saturation": "-100" }, { "lightness": "47" } ] }, { "featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [ { "lightness": "-12" } ] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [ { "color": "#40b9ff" }, { "lightness": "77" } ] }, { "featureType": "road.local", "elementType": "geometry.fill", "stylers": [ { "lightness": "5" }, { "saturation": "100" } ] }, { "featureType": "road.local", "elementType": "geometry.stroke", "stylers": [ { "saturation": "100" }, { "lightness": "15" } ] }, { "featureType": "transit.station.airport", "elementType": "geometry", "stylers": [ { "lightness": "47" }, { "saturation": "-100" } ] }, { "featureType": "water", "elementType": "all", "stylers": [ { "visibility": "on" }, { "color": "#acbcc9" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "saturation": "53" } ] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [ { "lightness": "-42" }, { "saturation": "17" } ] }, { "featureType": "water", "elementType": "labels.text.stroke", "stylers": [ { "lightness": "61" } ] } ]
     });
     addMapMarkers();
 
@@ -137,6 +158,11 @@ jQuery( document ).ready(function() {
         itemSelector: '.portfolio-item',
         sizer: '#shuffle-sizer',
         buffer: 1,
+    });
+
+    jQuery('#clear-filters').click(function(){
+        myShuffle.sort({});
+        myShuffle.filter();
     });
 
     jQuery('.categories-list button').click(function(e){
@@ -178,6 +204,10 @@ jQuery( document ).ready(function() {
     }).mouseleave(function() {
         var id = jQuery(this).attr('data-project-id');
         makeMarkerInactive(id);
+    });
+
+    jQuery('#projects-footer-menu .menu-mobile-toggle').click(function(){
+       jQuery('#projects-footer-wrapper').toggleClass('active');
     });
 
 });

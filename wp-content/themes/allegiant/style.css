@@ -338,21 +338,21 @@ POSTS & PAGES
 .portfolio { background:#fff; }
 .portfolio-item { display:block; overflow:hidden; position:relative; text-align:center; padding:1px; margin:0; }
 .portfolio-item-image { display:block; width:100%; overflow:hidden; background:#eee; position:relative; }
-.portfolio-item img { display:block; max-width:100%; margin:0 auto; width:100%; height:auto; line-height:0; -moz-transition:0.5s all; -webkit-transition:0.5s all; transition:0.5s all; }
-.portfolio-item .portfolio-item-overlay { opacity:0; position:absolute; top:0; bottom:0; left:0; right:0; text-align:center; -moz-transition:0.3s all; -webkit-transition:0.3s all; transition:0.3s all; -moz-transition-delay:0.1s; -webkit-transition-delay:0.1s; transition-delay:0.1s; z-index:9997; }
-.portfolio-item .portfolio-item-title,
-.portfolio-item .portfolio-item-description { position:absolute; left:0; opacity:0; width:80%; -moz-transition:0.4s all; -webkit-transition:0.4s all; transition:0.4s all; z-index:9998; }
-.portfolio-item .portfolio-item-title { font-size:1.3em; opacity:1; text-transform:uppercase; bottom:50%; margin:0 10% -20px; }
-.portfolio-item .portfolio-item-description {  top:50%; margin:20px 10% 0; }
-.portfolio-item a:hover { text-decoration:none; }
-.portfolio-item:hover .portfolio-item-overlay { opacity:0.9; }
-.portfolio-item-has-excerpt:hover .portfolio-item-title { opacity:1; margin-bottom:10px; }
-.portfolio-item:hover .portfolio-item-description { opacity:1; margin-top:10px; }
-.portfolio-item:hover img { -moz-transform:scale(1.1); -webkit-transform:scale(1.1); transform:scale(1.1); }
+.portfolio-item img { display:block; max-width:100%; margin:0 auto; width:100%; height:auto; line-height:0; }
+/*.portfolio-item .portfolio-item-overlay { opacity:0; position:absolute; top:0; bottom:0; left:0; right:0; text-align:center; -moz-transition:0.3s all; -webkit-transition:0.3s all; transition:0.3s all; -moz-transition-delay:0.1s; -webkit-transition-delay:0.1s; transition-delay:0.1s; z-index:9997; }*/
+/*.portfolio-item .portfolio-item-title,*/
+/*.portfolio-item .portfolio-item-description { position:absolute; left:0; opacity:0; width:80%; -moz-transition:0.4s all; -webkit-transition:0.4s all; transition:0.4s all; z-index:9998; }*/
+/*.portfolio-item .portfolio-item-title { font-size:1.3em; opacity:1; text-transform:uppercase; bottom:50%; margin:0 10% -20px; }*/
+/*.portfolio-item .portfolio-item-description {  top:50%; margin:20px 10% 0; }*/
+/*.portfolio-item a:hover { text-decoration:none; }*/
+/*.portfolio-item:hover .portfolio-item-overlay { opacity:0.9; }*/
+/*.portfolio-item-has-excerpt:hover .portfolio-item-title { opacity:1; margin-bottom:10px; }*/
+/*.portfolio-item:hover .portfolio-item-description { opacity:1; margin-top:10px; }*/
+/*.portfolio-item:hover img { -moz-transform:scale(1.1); -webkit-transform:scale(1.1); transform:scale(1.1); }*/
 
 
 /* SERVICES */
-.services { margin:0; padding:50px 0 10px; }
+/*.services { margin:0; padding:50px 0 10px; }*/
 .home .services { background:rgba(0,0,0,0.4); }
 .services .service { margin-bottom:50px; }
 .services .service a:hover { text-decoration:none; }

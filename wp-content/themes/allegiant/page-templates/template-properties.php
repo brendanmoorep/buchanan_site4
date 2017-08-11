@@ -4,6 +4,35 @@
     $mapMarkers = [];
 ?>
 <?php get_template_part('template-parts/element', 'page-header'); ?>
+<div id="properties-contact-wrapper">
+    <div class="container">
+        <h2 class="underline">Contact Leasing</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="contact-icon"><span class="glyphicon glyphicon-user"></span></div>
+                <h3><?php the_cfc_field('leasingcontactinfo', 'leasing-contact-name'); ?></h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a class="color-white" href="tel:<?php the_cfc_field('leasingcontactinfo', 'leasing-contact-</div>'); ?>">
+                    <div class="contact-icon"><span class="glyphicon glyphicon-earphone"></span></div>
+                </a>
+                <h3><a class="color-white" href="tel:<?php the_cfc_field('leasingcontactinfo', 'leasing-contact-</div>'); ?>"><?php the_cfc_field('leasingcontactinfo', 'leasing-contact-phone'); ?></a></h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a class="color-white" href="mailto:<?php the_cfc_field('leasingcontactinfo', 'leasing-contact-email'); ?>">
+                    <div class="contact-icon"><span class="glyphicon">&#x2709;</span></div>
+                </a>
+                <h3><a class="color-white" href="mailto:<?php the_cfc_field('leasingcontactinfo', 'leasing-contact-email'); ?>"><?php the_cfc_field('leasingcontactinfo', 'leasing-contact-email'); ?></a></h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a class="color-white" target="_blank" href="<?php the_cfc_field('leasingcontactinfo', 'tenant-portal-link'); ?>">
+                    <div class="contact-icon"><span class="glyphicon glyphicon-home"></span></div>
+                </a>
+                <h3><a class="color-white" target="_blank" href="<?php the_cfc_field('leasingcontactinfo', 'tenant-portal-link'); ?>">Tenant Portal</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="gray-box-full-width">
         <div class="container">
                 <div class="filter-section">
