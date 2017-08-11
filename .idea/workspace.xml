@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="587dd44c-9354-429b-9fc7-a925032ea18b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/projects.js" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/projects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-about-us.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-about-us.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-projects.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-projects.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-service.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-service.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-shuffle-project.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-shuffle-project.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-team.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-team.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,8 +59,8 @@
           <file leaf-file-name="template-contact-us.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="42" column="54" lean-forward="true" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+                <state relative-caret-position="615">
+                  <caret line="41" column="57" lean-forward="true" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
@@ -614,12 +601,12 @@
       <workItem from="1502239886092" duration="3771000" />
       <workItem from="1502276433637" duration="57000" />
       <workItem from="1502336124246" duration="2728000" />
-      <workItem from="1502472383625" duration="8112000" />
+      <workItem from="1502472383625" duration="8419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199360000" />
+    <option name="totallyTimeSpent" value="199667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1043,8 +1030,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="54" lean-forward="true" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+        <state relative-caret-position="615">
+          <caret line="41" column="57" lean-forward="true" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
           <folding />
         </state>
       </provider>

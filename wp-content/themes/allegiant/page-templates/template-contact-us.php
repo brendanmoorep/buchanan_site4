@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <?php //get_template_part('template-parts/element', 'page-header'); ?>
-    <div id="contact-us-page" class="white-overlay bg-white">
+    <div id="contact-us-page" class="bg-white">
         <div id="contact-info" class="center color-blue">
             <div class="container">
                 <div class="row">
