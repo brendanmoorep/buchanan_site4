@@ -28,14 +28,12 @@
         </div>
         <div class="services-container">
             <div class="container">
-                <section>
                     <?php if(get_query_var('paged')) $current_page = get_query_var('paged'); else $current_page = 1; ?>
                     <?php $query = new WP_Query('post_type=cpo_service&paged='.$current_page.'&posts_per_page=-1&order=ASC&orderby=menu_order'); ?>
                     <section id="services" class="services">
-                        <h2>Core Services</h2>
+                        <h2 class="underline color-white center">Core Services</h2>
                         <?php cpotheme_grid($query->posts, 'element', 'service', 3); ?>
                     </section>
-                </section>
             </div>
         </div>
     </div>

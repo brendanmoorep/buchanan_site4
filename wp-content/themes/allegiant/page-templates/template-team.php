@@ -10,7 +10,7 @@
 			
 			<?php if(have_posts()) while(have_posts()): the_post(); ?>
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="page-content">
+				<div class="team-page page-content">
 					<?php the_content(); ?>
 				</div>
 			</div>
@@ -36,26 +36,18 @@
             <?php ?>
 			<section id="team" class="team">
                 <div id="founders">
-                    <h3>Our Founders</h3>
+                    <h2 class="underline center">Our Founders</h2>
                     <?php cpotheme_grid($foundersQuery->posts, 'element', 'team', 3); ?>
                 </div>
                 <div id="principles">
-                    <h3>Our Principals</h3>
+                    <h2 class="underline center">Our Principals</h2>
                     <?php cpotheme_grid($principlesQuery->posts, 'element', 'team', 4); ?>
                 </div>
                 <div id="the-team">
-                    <h3>The Team</h3>
+                    <h2 class="underline center">The Team</h2>
                     <?php cpotheme_grid($teamQuery->posts, 'element', 'team', 4); ?>
                 </div>
-                    <?php
-//                    foreach ($foundersQuery->posts as $key => $post ):
-//                        //$meta = get_post_meta($post->ID,null,true);
-//                        //$data = maybe_unserialize($meta);
-//                        debugg($post);
-//                    endforeach;
-                    ?>
 			</section>
-			<?php // cpotheme_numbered_pagination($query); ?>
 			<?php wp_reset_postdata(); ?>
 			<?php endif; ?>
 			

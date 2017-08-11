@@ -38,6 +38,7 @@ require_once($include_path.'setup.php');
 require get_template_directory() . '/core/welcome-screen/welcome-page-setup.php';
 
 function theme_styles() {
+    wp_enqueue_style( 'google-font-roboto', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400', false );
     wp_enqueue_style( 'bootstrap_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
     wp_enqueue_style( 'bootstrap_theme_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css' );
     wp_enqueue_style( 'main_css', get_template_directory_uri() . '/buchananpartners/css/buchananpartners.css' );
