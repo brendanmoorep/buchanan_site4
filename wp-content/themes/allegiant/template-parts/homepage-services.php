@@ -2,7 +2,7 @@
 <?php if($query->posts): $feature_count = 0; ?>
 <div id="services" class="services dark">
 	<div class="container">
-		<?php cpotheme_block('home_services', 'services-heading section-heading'); ?>
+		<h2 class="underline center">Our Services</h2>
 		<?php cpotheme_grid($query->posts, 'element', 'service', 3); ?>
 	</div>
 </div>

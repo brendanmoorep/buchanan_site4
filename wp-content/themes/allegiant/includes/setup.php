@@ -23,43 +23,43 @@ function cpotheme_theme_layout($data){
 }
 
 //Add homepage slider
-function cpotheme_home_slider(){ 
-	if(is_front_page()) get_template_part('template-parts/homepage', 'slider'); 
+function cpotheme_home_slider(){
+	//if(is_front_page()) get_template_part('template-parts/homepage', 'slider');
 }
 
 //Add homepage features
-function cpotheme_home_features(){ 
-	if(is_front_page()) get_template_part('template-parts/homepage', 'features'); 
+function cpotheme_home_features(){
+	//if(is_front_page()) get_template_part('template-parts/homepage', 'features');
 }
 
 //Add homepage tagline
-function cpotheme_home_tagline(){ 
-	if(is_front_page()) cpotheme_block('home_tagline', 'tagline dark', 'container'); 
+function cpotheme_home_tagline(){
+	//if(is_front_page()) cpotheme_block('home_tagline', 'tagline dark', 'container');
 }
 
 //Add homepage portfolio
-function cpotheme_home_portfolio(){ 
-	if(is_front_page()) get_template_part('template-parts/homepage', 'portfolio'); 
+function cpotheme_home_portfolio(){
+	//if(is_front_page()) get_template_part('template-parts/homepage', 'portfolio');
 }
 
 //Add homepage services
-function cpotheme_home_services(){ 
-	if(is_front_page()) get_template_part('template-parts/homepage', 'services'); 
+function cpotheme_home_services(){
+	//if(is_front_page()) get_template_part('template-parts/homepage', 'services');
 }
 
 //Add homepage team
-function cpotheme_home_team(){ 
-	if(is_front_page()) get_template_part('template-parts/homepage', 'team'); 
+function cpotheme_home_team(){
+	//if(is_front_page()) get_template_part('template-parts/homepage', 'team');
 }
 
 //Add homepage testimonials
-function cpotheme_home_testimonials(){ 
-	if(is_front_page()) get_template_part('template-parts/homepage', 'testimonials'); 
+function cpotheme_home_testimonials(){
+	//if(is_front_page()) get_template_part('template-parts/homepage', 'testimonials');
 }
 
 //Add homepage clients
-function cpotheme_home_clients(){ 
-	if(is_front_page()) get_template_part('template-parts/homepage', 'clients'); 
+function cpotheme_home_clients(){
+	//if(is_front_page()) get_template_part('template-parts/homepage', 'clients');
 }
 
 

@@ -7,6 +7,7 @@
 		<?php $slide_count++; ?>
 		<?php $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array(1500, 7000), false, ''); ?>
 		<div id="slide_<?php echo $slide_count; ?>" class="slide cycle-slide-active" style="background-image:url(<?php echo $image_url[0]; ?>);">
+            <div class="slide-overlay"></div>
 			<div class="slide-body">
 				<div class="container">
 					<div class="slide-caption">

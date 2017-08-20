@@ -28,7 +28,7 @@
                     $propertyTypes = get_terms('property_type', 'order=ASC&orderby=name');
                     if(sizeof($propertyTypes) > 0){
                         foreach($propertyTypes as $pt):
-                            if($pt->slug !== "new" && $pt->slug !== "archived"){
+                            if($pt->slug !== "new" && $pt->slug !== "archived" && $pt->slug !== "featured"){
                                 echo '<button data-group="' . $pt->slug . '" type="button" class="taxonomy-filter btn btn-primary ' . $pt->slug . '">' . $pt->name . '</button>';
                             }
                         endforeach;
