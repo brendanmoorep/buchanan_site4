@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div id="taxonomies-filter">
-                <div class="section">
+                <div class="section property-types">
                     <span><b>Filter by:</b></span>
                     <div class="btn-group">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                <div class="section categories-list">
+                <div class="section project-categories categories-list">
                     <span><b>Categories:</b></span>
                     <?php
                     // cpotheme_secondary_menu('property_type', 'menu-portfolio');
@@ -29,11 +29,30 @@
                     if(sizeof($propertyTypes) > 0){
                         foreach($propertyTypes as $pt):
                             if($pt->slug !== "new" && $pt->slug !== "archived" && $pt->slug !== "featured"){
-                                echo '<button data-group="' . $pt->slug . '" type="button" class="taxonomy-filter btn btn-primary ' . $pt->slug . '">' . $pt->name . '</button>';
+                                echo '<button data-group="' . $pt->slug . '" type="button" class="category taxonomy-filter btn btn-primary ' . $pt->slug . '">' . $pt->name . '</button>';
                             }
                         endforeach;
                     }
                     ?>
+                </div>
+                <div class="section project-categories categories-list-mobile">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Property Category <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu project-category-filter">
+                            <?php
+                                if(sizeof($propertyTypes) > 0){
+                                    foreach($propertyTypes as $pt):
+                                        if($pt->slug !== "new" && $pt->slug !== "archived" && $pt->slug !== "featured"){
+                                            echo '<li><a class="' . $pt->slug . ' category" data-group="' . $pt->slug . '" href="javascript:void(0);">' . $pt->name . '</a></li>';
+                                            //echo '<button data-group="' . $pt->slug . '" type="button" class="taxonomy-filter btn btn-primary ' . $pt->slug . '">' . $pt->name . '</button>';
+                                        }
+                                    endforeach;
+                                }
+                            ?>
+                        </ul>
+                    </div>
                 </div>
                 <span id="clear-filters">Clear All <span class="glyphicon glyphicon-remove-circle"></span></span>
             </div>
@@ -46,7 +65,7 @@
     </div>
     <div id="projects-content-wrapper" class="container-fluid">
         <div class="row">
-            <div class="col-md-6 col-md-offset-6">
+            <div class="col-md-12 col-lg-6 col-md-offset-0 col-lg-offset-6">
                 <?php $query = new WP_Query('post_type=projects&order=ASC&orderby=menu_order'); ?>
                 <?php if($query->posts): ?>
                     <section id="portfolio" class="portfolio">
@@ -81,7 +100,7 @@
                                     $mapMarkers[$post->ID] = $marker;
                                 endforeach;
                                 ?>
-                                <div id="shuffle-sizer" class="col-md-6 col-sm-12"></div>
+                                <div id="shuffle-sizer" class="col-xs-12 col-sm-6"></div>
                             </div>
                         </div>
                     </section>

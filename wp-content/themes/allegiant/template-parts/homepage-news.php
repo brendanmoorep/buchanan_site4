@@ -1,5 +1,5 @@
 <?php
-    $query = new WP_Query('post_type=news&posts_per_page=-1');
+    $query = new WP_Query('post_type=newsitem&posts_per_page=-1');
     if($query->posts):
     $newsItems = [];
     foreach($query->posts as $post){
@@ -27,16 +27,17 @@
                 <?php echo date('M', $item->date); ?> <?php echo date('Y', $item->date); ?>
             </div>
          </div>
-         <h3 class="color-blue"><?php echo $item->post_title; ?></h3>
+         <a href="<?php the_permalink($item->ID); ?>"><h3 class="color-blue"><?php echo $item->post_title; ?></h3></a>
          <p><?php echo $item->post_excerpt; ?></p>
         <?php
-            $newsLink = get_cfc_field('news_item_details', 'news-item-link', $item->ID);
-            if($newsLink !== ""):
-                ?>
-                    <a href="<?php echo $newsLink; ?>" class="btn-transparent" target="_blank">Read More</a>
-                <?php
-            endif;
+//            $newsLink = get_cfc_field('news_item_details', 'news-item-link', $item->ID);
+//            if($newsLink !== ""):
+//                ?>
+<!--                    <a href="--><?php //echo $newsLink; ?><!--" class="btn-transparent" target="_blank">Read More</a>-->
+<!--                --><?php
+//            endif;
         ?>
+        <a href="<?php the_permalink($item->ID); ?>" class="btn-transparent">Read More</a>
      </article>
   </div>
 <?php

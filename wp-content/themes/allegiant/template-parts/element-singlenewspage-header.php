@@ -1,7 +1,7 @@
 <?php wp_reset_query(); ?>
 
 <?php
-    if (has_post_thumbnail( $post->ID ) && (isset($GLOBALS['SKIP_FEATURED_IMAGE']) && $GLOBALS['SKIP_FEATURED_IMAGE'] !== false)){
+    if (has_post_thumbnail( $post->ID ) ){
         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
         $header_image = $image[0];
     }else{
@@ -15,7 +15,7 @@
         <div class="title-overlay"></div>
     <?php endif; ?>
 	<div class="container">
-		<?php do_action('cpotheme_title'); ?>
+        <h1 class="pagetitle-title heading">News Details</h1>
         <?php  echo the_cfc_field( 'headercontent', 'header-content' );?>
 	</div>
 </section>

@@ -1,6 +1,8 @@
 <?php /* Template Name: About Us */ ?>
 <?php get_header(); ?>
+<?php
 
+?>
 <?php get_template_part('template-parts/element', 'page-header'); ?>
     <div id="about-us-page">
         <div class="container">
@@ -11,21 +13,21 @@
                             <?php the_content(); ?>
                         </div>
                     </div>
-                <?php endwhile; ?>
             </section>
             <div id="bubbles">
                 <div class="circle">
-                    <h3>Founded in 1998</h3>
+                    <h3><?php echo the_cfc_field('aboutusfacts1', 'circle-1'); ?></h3>
                     <div class="circle">
-                        <h3>Over 1,200 active properies</h3>
+                        <h3><?php the_cfc_field('aboutusfacts1', 'circle-2'); ?></h3>
                         <div class="circle">
-                            <h3>Over 5 million sq/ft of commercial properties</h3>
+                            <h3><?php the_cfc_field('aboutusfacts1', 'circle-3'); ?></h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="clear"></div>
         </div>
+        <?php endwhile; ?>
         <div class="services-container">
             <div class="container">
                     <?php if(get_query_var('paged')) $current_page = get_query_var('paged'); else $current_page = 1; ?>

@@ -1,7 +1,7 @@
 <?php
     $groupClasses = str_replace(["','","['","']","'"], ' ', $post->termsAttr);
 ?>
-<div data-project-id="<?php echo $post->ID; ?>" data-groups="[<?php echo $post->termsAttr; ?>]" class="portfolio-item col-md-6 col-sm-12 <?php echo $groupClasses; ?>">
+<div data-project-id="<?php echo $post->ID; ?>" data-groups="[<?php echo $post->termsAttr; ?>]" class="portfolio-item col-xs-12 col-sm-6 <?php echo $groupClasses; ?>">
 
     <?php foreach( get_cfc_meta( 'project_details' ) as $key => $value ): ?>
         <?php $photo_obj = get_cfc_field( 'project_details','images', false, $key ); ?>

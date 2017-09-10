@@ -165,7 +165,7 @@ jQuery( document ).ready(function() {
         myShuffle.filter();
     });
 
-    jQuery('.categories-list button').click(function(e){
+    jQuery('.project-categories .category').click(function(e){
         jQuery('#taxonomies-filter button').removeClass('active');
         jQuery(this).toggleClass('active');
         var type = jQuery(this).attr('data-group');

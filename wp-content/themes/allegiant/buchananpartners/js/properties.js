@@ -13,8 +13,7 @@ jQuery( document ).ready(function() {
 
     var myShuffle = new Shuffle(jQuery('.shuffle-container'), {
         itemSelector: '.available-property',
-        sizer: '.properties #shuffle-sizer',
-        isCentered:true
+        sizer: '.properties #shuffle-sizer'
     });
 
     jQuery('.available-property .btn_wrapper a').click(function(e){
