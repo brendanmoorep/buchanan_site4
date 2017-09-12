@@ -1349,10 +1349,16 @@ h3.portfolio-item-title:before {
 .footer-contact-info ul{
     text-align:left;
 }
-
+.subfooter{
+    display: none;
+}
 .footer-contact-info li{
     font-weight:100;
     list-style:none;
+}
+
+.footer .menu-main li a{
+    margin-top:-17px;
 }
 
 .footer-tagline{

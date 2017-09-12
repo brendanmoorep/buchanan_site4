@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
     <?php wp_head(); ?>
+    <link rel="shortcut icon" href="/wp-content/uploads/2017/06/diamond.png" />
 </head>
 
 <body <?php body_class(); ?>>
