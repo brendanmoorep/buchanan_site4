@@ -32,6 +32,7 @@ jQuery( document ).ready(function() {
     jQuery('#clear-filters').click(function(){
        myShuffle.sort({});
        myShuffle.filter();
+       jQuery('.mileage-indicator').html('');
     });
 
     /* PRICE SORT / FILTER */
@@ -76,7 +77,7 @@ jQuery( document ).ready(function() {
         var options = {
             reverse: type === 'desc',
             by: function(element){
-                return element.getAttribute('data-sqft').toLowerCase();
+                return parseInt(element.getAttribute('data-sqft').toLowerCase());
             }
         }
         myShuffle.sort(options);
@@ -107,11 +108,24 @@ jQuery( document ).ready(function() {
     });
 
     /* DISTANCE FROM ADDRESS */
+
+    jQuery('.distance-sort').click(function(){
+        var type = jQuery(this).attr('data-sort-type');
+        var options = {
+            reverse: type === 'desc',
+            by: function(element){
+                var distance = element.getAttribute('data-distance').toLowerCase();
+                return parseInt(distance);
+            }
+        }
+        myShuffle.sort(options);
+    });
+
     function sortPropertiesByDistance(){
-        console.log('sort');
         myShuffle.sort({
             by: function(element){
-                return element.getAttribute('data-distance');
+                var distance = element.getAttribute('data-distance').toLowerCase();
+                return parseInt(distance);
             }
         })
     }
@@ -174,8 +188,15 @@ jQuery( document ).ready(function() {
                 }
             });
         }
+
+        var regexTestAddress = function(string){
+            var pattern = /^(?=.*\d)[a-zA-Z\s\d\/]+$/;
+            return pattern.test(string);
+        }
         var addressEntered = jQuery(this).val();
-        if(mapsLoaded){
+        var isValidAddress = regexTestAddress(addressEntered);
+        if(!isValidAddress) alert('Please make sure the address entered is valid.');
+        if(mapsLoaded && isValidAddress){
             var geocoder = new google.maps.Geocoder();
             geocoder.geocode( { 'address': addressEntered }, function(results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {

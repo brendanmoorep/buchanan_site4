@@ -73,10 +73,10 @@
                             <span class="caret"></span> <span class="sr-only"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li class="size-filter"><a class="no-padding"><input id="zipcode-sort" type="text"  class="form-control" placeholder="Enter an address" /></a></li>
+                            <li><a class="no-padding"><input id="zipcode-sort" type="text"  class="form-control" placeholder="Enter an address" /></a></li>
                             <li role="separator" class="divider"></li>
-                            <li class="size-sort" data-sort-type="asc"><a>Closest</a></li>
-                            <li class="size-sort" data-sort-type="desc"><a>Furthest</a></li>
+                            <li class="distance-sort" data-sort-type="asc"><a>Closest</a></li>
+                            <li class="distance-sort" data-sort-type="desc"><a>Furthest</a></li>
                         </ul>
                     </div>
                     <div id="property-type-wrapper" class="btn-group">

@@ -1332,6 +1332,35 @@ h3.portfolio-item-title:before {
     left: -60%;
 }
 
+/* FOOTER STYLES*/
+.footer-logo img{
+    max-width:230px;
+}
+.footer-contact-info{
+    margin-top:-5px;
+}
+
+.footer-contact-info h3{
+    margin-top:0;
+}
+.footer-contact-info h3, .footer-contact-info strong{
+    color:#205582;
+}
+.footer-contact-info ul{
+    text-align:left;
+}
+
+.footer-contact-info li{
+    font-weight:100;
+    list-style:none;
+}
+
+.footer-tagline{
+    text-align: left;
+    padding-left:30px;
+}
+
+
 #bubbles .circle .circle .circle > h3{
     margin-top:23%;
 }
