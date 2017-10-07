@@ -1948,15 +1948,19 @@ function get_theme_starter_content() {
 			'text_business_info' => array( 'text', array(
 				'title' => _x( 'Find Us', 'Theme starter content' ),
 				'text' => join( '', array(
-					'<p><strong>' . _x( 'Address', 'Theme starter content' ) . '</strong><br />',
-					_x( '123 Main Street', 'Theme starter content' ) . '<br />' . _x( 'New York, NY 10001', 'Theme starter content' ) . '</p>',
-					'<p><strong>' . _x( 'Hours', 'Theme starter content' ) . '</strong><br />',
-					_x( 'Monday&mdash;Friday: 9:00AM&ndash;5:00PM', 'Theme starter content' ) . '<br />' . _x( 'Saturday &amp; Sunday: 11:00AM&ndash;3:00PM', 'Theme starter content' ) . '</p>'
+					'<strong>' . _x( 'Address', 'Theme starter content' ) . "</strong>\n",
+					_x( '123 Main Street', 'Theme starter content' ) . "\n" . _x( 'New York, NY 10001', 'Theme starter content' ) . "\n\n",
+					'<strong>' . _x( 'Hours', 'Theme starter content' ) . "</strong>\n",
+					_x( 'Monday&mdash;Friday: 9:00AM&ndash;5:00PM', 'Theme starter content' ) . "\n" . _x( 'Saturday &amp; Sunday: 11:00AM&ndash;3:00PM', 'Theme starter content' )
 				) ),
+				'filter' => true,
+				'visual' => true,
 			) ),
 			'text_about' => array( 'text', array(
 				'title' => _x( 'About This Site', 'Theme starter content' ),
 				'text' => _x( 'This may be a good place to introduce yourself and your site or include some credits.', 'Theme starter content' ),
+				'filter' => true,
+				'visual' => true,
 			) ),
 			'archives' => array( 'archives', array(
 				'title' => _x( 'Archives', 'Theme starter content' ),
@@ -3058,4 +3062,66 @@ function is_customize_preview() {
 	global $wp_customize;
 
 	return ( $wp_customize instanceof WP_Customize_Manager ) && $wp_customize->is_preview();
+}
+
+/**
+ * Make sure that auto-draft posts get their post_date bumped to prevent premature garbage-collection.
+ *
+ * When a changeset is updated but remains an auto-draft, ensure the post_date
+ * for the auto-draft posts remains the same so that it will be
+ * garbage-collected at the same time by `wp_delete_auto_drafts()`. Otherwise,
+ * if the changeset is updated to be a draft then update the posts
+ * to have a far-future post_date so that they will never be garbage collected
+ * unless the changeset post itself is deleted.
+ *
+ * @since 4.8.0
+ * @access private
+ * @see wp_delete_auto_drafts()
+ *
+ * @param string   $new_status Transition to this post status.
+ * @param string   $old_status Previous post status.
+ * @param \WP_Post $post       Post data.
+ * @global wpdb $wpdb
+ */
+function _wp_keep_alive_customize_changeset_dependent_auto_drafts( $new_status, $old_status, $post ) {
+	global $wpdb;
+	unset( $old_status );
+
+	// Short-circuit if not a changeset or if the changeset was published.
+	if ( 'customize_changeset' !== $post->post_type || 'publish' === $new_status ) {
+		return;
+	}
+
+	if ( 'auto-draft' === $new_status ) {
+		/*
+		 * Keep the post date for the post matching the changeset
+		 * so that it will not be garbage-collected before the changeset.
+		 */
+		$new_post_date = $post->post_date;
+	} else {
+		/*
+		 * Since the changeset no longer has an auto-draft (and it is not published)
+		 * it is now a persistent changeset, a long-lived draft, and so any
+		 * associated auto-draft posts should have their dates
+		 * pushed out very far into the future to prevent them from ever
+		 * being garbage-collected.
+		 */
+		$new_post_date = gmdate( 'Y-m-d H:i:d', strtotime( '+100 years' ) );
+	}
+
+	$data = json_decode( $post->post_content, true );
+	if ( empty( $data['nav_menus_created_posts']['value'] ) ) {
+		return;
+	}
+	foreach ( $data['nav_menus_created_posts']['value'] as $post_id ) {
+		if ( empty( $post_id ) || 'auto-draft' !== get_post_status( $post_id ) ) {
+			continue;
+		}
+		$wpdb->update(
+			$wpdb->posts,
+			array( 'post_date' => $new_post_date ), // Note wp_delete_auto_drafts() only looks at this this date.
+			array( 'ID' => $post_id )
+		);
+		clean_post_cache( $post_id );
+	}
 }

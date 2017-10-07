@@ -772,7 +772,7 @@ function page_template_dropdown( $default = '', $post_type = 'page' ) {
 	ksort( $templates );
 	foreach ( array_keys( $templates ) as $template ) {
 		$selected = selected( $default, $templates[ $template ], false );
-		echo "\n\t<option value='" . $templates[ $template ] . "' $selected>$template</option>";
+		echo "\n\t<option value='" . esc_attr( $templates[ $template ] ) . "' $selected>" . esc_html( $template ) . "</option>";
 	}
 }
 
@@ -1520,7 +1520,7 @@ function find_posts_div($found_action = '') {
 	<div id="find-posts" class="find-box" style="display: none;">
 		<div id="find-posts-head" class="find-box-head">
 			<?php _e( 'Attach to existing content' ); ?>
-			<button type="button" id="find-posts-close"><span class="screen-reader-text"><?php _e( 'Close media attachment panel' ); ?></button>
+			<button type="button" id="find-posts-close"><span class="screen-reader-text"><?php _e( 'Close media attachment panel' ); ?></span></button>
 		</div>
 		<div class="find-box-inside">
 			<div class="find-box-search">
