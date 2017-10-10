@@ -134,7 +134,7 @@ wp.mediaWidgets = ( function( $ ) {
 							noticeContainer.empty();
 							noticeContainer.append( $( '<p>', {
 								html: notice
-							} ) );
+							}));
 							noticeContainer.slideDown( 'fast' );
 						}
 					},
@@ -142,9 +142,6 @@ wp.mediaWidgets = ( function( $ ) {
 					/**
 					 * Fetch media.
 					 *
-					 * This is a TEMPORARY measure until the WP API supports an oEmbed proxy endpoint. See #40450.
-					 *
-					 * @see https://core.trac.wordpress.org/ticket/40450
 					 * @returns {void}
 					 */
 					fetch: function() {
@@ -152,6 +149,12 @@ wp.mediaWidgets = ( function( $ ) {
 
 						if ( embedLinkView.dfd && 'pending' === embedLinkView.dfd.state() ) {
 							embedLinkView.dfd.abort();
+						}
+
+						// Abort if the URL field was emptied out.
+						if ( ! embedLinkView.model.get( 'url' ) ) {
+							embedLinkView.setErrorNotice( '' );
+							return;
 						}
 
 						fetchSuccess = function( response ) {
@@ -178,6 +181,12 @@ wp.mediaWidgets = ( function( $ ) {
 							} else {
 								fetchSuccess( '<!--success-->' );
 							}
+							return;
+						}
+
+						// If video, test for Vimeo and YouTube, otherwise, renderFail(). This should be removed once #34115 is resolved.
+						if ( 'video' === this.controller.options.mimeType && ! /vimeo|youtu\.?be/.test( urlParser.host ) ) {
+							embedLinkView.renderFail();
 							return;
 						}
 
@@ -214,7 +223,7 @@ wp.mediaWidgets = ( function( $ ) {
 					 *
 					 * @returns {void}
 					 */
-					renderFail: function renderFail(  ) {
+					renderFail: function renderFail() {
 						var embedLinkView = this; // eslint-disable-line consistent-this
 						$( '#embed-url-field' ).addClass( 'invalid' );
 						embedLinkView.setErrorNotice( embedLinkView.controller.options.invalidEmbedTypeError || 'ERROR' );
@@ -227,7 +236,7 @@ wp.mediaWidgets = ( function( $ ) {
 				controller: this.controller,
 				model:      this.model.props,
 				priority:   40
-			}) );
+			}));
 		}
 	});
 
@@ -252,10 +261,10 @@ wp.mediaWidgets = ( function( $ ) {
 				}
 			});
 			if ( specificMimes.length > 0 ) {
-				mime = specificMimes.join( ',' );
+				mime = specificMimes;
 			}
 
-			this.states.add( [
+			this.states.add([
 
 				// Main states.
 				new component.PersistentDisplaySettingsLibrary({
@@ -284,7 +293,7 @@ wp.mediaWidgets = ( function( $ ) {
 					type: 'image' === this.options.mimeType ? 'image' : 'link',
 					invalidEmbedTypeError: this.options.invalidEmbedTypeError
 				})
-			] );
+			]);
 		},
 
 		/**
@@ -426,7 +435,8 @@ wp.mediaWidgets = ( function( $ ) {
 		 *
 		 * @param {Object}         options - Options.
 		 * @param {Backbone.Model} options.model - Model.
-		 * @param {jQuery}         options.el - Control container element.
+		 * @param {jQuery}         options.el - Control field container element.
+		 * @param {jQuery}         options.syncContainer - Container element where fields are synced for the server.
 		 * @returns {void}
 		 */
 		initialize: function initialize( options ) {
@@ -434,12 +444,19 @@ wp.mediaWidgets = ( function( $ ) {
 
 			Backbone.View.prototype.initialize.call( control, options );
 
-			if ( ! control.el ) {
-				throw new Error( 'Missing options.el' );
-			}
 			if ( ! ( control.model instanceof component.MediaWidgetModel ) ) {
 				throw new Error( 'Missing options.model' );
 			}
+			if ( ! options.el ) {
+				throw new Error( 'Missing options.el' );
+			}
+			if ( ! options.syncContainer ) {
+				throw new Error( 'Missing options.syncContainer' );
+			}
+
+			control.syncContainer = options.syncContainer;
+
+			control.$el.addClass( 'media-widget-control' );
 
 			// Allow methods to be passed in with control context preserved.
 			_.bindAll( control, 'syncModelToInputs', 'render', 'updateSelectedAttachment', 'renderPreview' );
@@ -480,7 +497,7 @@ wp.mediaWidgets = ( function( $ ) {
 			control.listenTo( control.model, 'change', control.render );
 
 			// Update the title.
-			control.$el.on( 'input', '.title', function updateTitle() {
+			control.$el.on( 'input change', '.title', function updateTitle() {
 				control.model.set({
 					title: $.trim( $( this ).val() )
 				});
@@ -544,7 +561,7 @@ wp.mediaWidgets = ( function( $ ) {
 		 */
 		syncModelToInputs: function syncModelToInputs() {
 			var control = this;
-			control.$el.next( '.widget-content' ).find( '.media-widget-instance-property' ).each( function() {
+			control.syncContainer.find( '.media-widget-instance-property' ).each( function() {
 				var input = $( this ), value;
 				value = control.model.get( input.data( 'property' ) );
 				if ( _.isUndefined( value ) ) {
@@ -637,13 +654,13 @@ wp.mediaWidgets = ( function( $ ) {
 		 * @returns {void}
 		 */
 		selectMedia: function selectMedia() {
-			var control = this, selection, mediaFrame, defaultSync, mediaFrameProps;
+			var control = this, selection, mediaFrame, defaultSync, mediaFrameProps, selectionModels = [];
 
 			if ( control.isSelected() && 0 !== control.model.get( 'attachment_id' ) ) {
-				selection = new wp.media.model.Selection( [ control.selectedAttachment ] );
-			} else {
-				selection = null;
+				selectionModels.push( control.selectedAttachment );
 			}
+
+			selection = new wp.media.model.Selection( selectionModels, { multiple: false } );
 
 			mediaFrameProps = control.mapModelToMediaFrameProps( control.model.toJSON() );
 			if ( mediaFrameProps.size ) {
@@ -742,7 +759,7 @@ wp.mediaWidgets = ( function( $ ) {
 					{ attachment_id: 0 }, // Because some media frames use `attachment_id` not `id`.
 					control.model.getEmbedResetProps()
 				);
-			}  else {
+			} else {
 				throw new Error( 'Unexpected state: ' + state.get( 'id' ) );
 			}
 
@@ -757,7 +774,7 @@ wp.mediaWidgets = ( function( $ ) {
 				if ( ext in control.model.schema && modelProps.url !== modelProps[ ext ] ) {
 					modelProps[ ext ] = '';
 				}
-			} );
+			});
 
 			return modelProps;
 		},
@@ -1000,9 +1017,8 @@ wp.mediaWidgets = ( function( $ ) {
 	 * @returns {void}
 	 */
 	component.handleWidgetAdded = function handleWidgetAdded( event, widgetContainer ) {
-		var widgetContent, controlContainer, widgetForm, idBase, ControlConstructor, ModelConstructor, modelAttributes, widgetControl, widgetModel, widgetId, widgetInside, animatedCheckDelay = 50, renderWhenAnimationDone;
+		var fieldContainer, syncContainer, widgetForm, idBase, ControlConstructor, ModelConstructor, modelAttributes, widgetControl, widgetModel, widgetId, widgetInside, animatedCheckDelay = 50, renderWhenAnimationDone;
 		widgetForm = widgetContainer.find( '> .widget-inside > .form, > .widget-inside > form' ); // Note: '.form' appears in the customizer, whereas 'form' on the widgets admin screen.
-		widgetContent = widgetForm.find( '> .widget-content' );
 		idBase = widgetForm.find( '> .id_base' ).val();
 		widgetId = widgetForm.find( '> .widget-id' ).val();
 
@@ -1029,8 +1045,9 @@ wp.mediaWidgets = ( function( $ ) {
 		 * components", the JS template is rendered outside of the normal form
 		 * container.
 		 */
-		controlContainer = $( '<div class="media-widget-control"></div>' );
-		widgetContent.before( controlContainer );
+		fieldContainer = $( '<div></div>' );
+		syncContainer = widgetContainer.find( '.widget-content:first' );
+		syncContainer.before( fieldContainer );
 
 		/*
 		 * Sync the widget instance model attributes onto the hidden inputs that widgets currently use to store the state.
@@ -1038,7 +1055,7 @@ wp.mediaWidgets = ( function( $ ) {
 		 * from the start, without having to sync with hidden fields. See <https://core.trac.wordpress.org/ticket/33507>.
 		 */
 		modelAttributes = {};
-		widgetContent.find( '.media-widget-instance-property' ).each( function() {
+		syncContainer.find( '.media-widget-instance-property' ).each( function() {
 			var input = $( this );
 			modelAttributes[ input.data( 'property' ) ] = input.val();
 		});
@@ -1047,7 +1064,8 @@ wp.mediaWidgets = ( function( $ ) {
 		widgetModel = new ModelConstructor( modelAttributes );
 
 		widgetControl = new ControlConstructor({
-			el: controlContainer,
+			el: fieldContainer,
+			syncContainer: syncContainer,
 			model: widgetModel
 		});
 
@@ -1073,6 +1091,51 @@ wp.mediaWidgets = ( function( $ ) {
 		 */
 		component.modelCollection.add( [ widgetModel ] );
 		component.widgetControls[ widgetModel.get( 'widget_id' ) ] = widgetControl;
+	};
+
+	/**
+	 * Setup widget in accessibility mode.
+	 *
+	 * @returns {void}
+	 */
+	component.setupAccessibleMode = function setupAccessibleMode() {
+		var widgetForm, widgetId, idBase, widgetControl, ControlConstructor, ModelConstructor, modelAttributes, fieldContainer, syncContainer;
+		widgetForm = $( '.editwidget > form' );
+		if ( 0 === widgetForm.length ) {
+			return;
+		}
+
+		idBase = widgetForm.find( '> .widget-control-actions > .id_base' ).val();
+
+		ControlConstructor = component.controlConstructors[ idBase ];
+		if ( ! ControlConstructor ) {
+			return;
+		}
+
+		widgetId = widgetForm.find( '> .widget-control-actions > .widget-id' ).val();
+
+		ModelConstructor = component.modelConstructors[ idBase ] || component.MediaWidgetModel;
+		fieldContainer = $( '<div></div>' );
+		syncContainer = widgetForm.find( '> .widget-inside' );
+		syncContainer.before( fieldContainer );
+
+		modelAttributes = {};
+		syncContainer.find( '.media-widget-instance-property' ).each( function() {
+			var input = $( this );
+			modelAttributes[ input.data( 'property' ) ] = input.val();
+		});
+		modelAttributes.widget_id = widgetId;
+
+		widgetControl = new ControlConstructor({
+			el: fieldContainer,
+			syncContainer: syncContainer,
+			model: new ModelConstructor( modelAttributes )
+		});
+
+		component.modelCollection.add( [ widgetControl.model ] );
+		component.widgetControls[ widgetControl.model.get( 'widget_id' ) ] = widgetControl;
+
+		widgetControl.render();
 	};
 
 	/**
@@ -1142,6 +1205,11 @@ wp.mediaWidgets = ( function( $ ) {
 			widgetContainers.one( 'click.toggle-widget-expanded', function toggleWidgetExpanded() {
 				var widgetContainer = $( this );
 				component.handleWidgetAdded( new jQuery.Event( 'widget-added' ), widgetContainer );
+			});
+
+			// Accessibility mode.
+			$( window ).on( 'load', function() {
+				component.setupAccessibleMode();
 			});
 		});
 	};

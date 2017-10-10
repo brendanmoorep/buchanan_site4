@@ -754,6 +754,25 @@ if( !file_exists( dirname(__FILE__).'/wck-stp.php' ) ) {
     }
 }
 
+/* add TranslatePress crosspromotion */
+add_action('add_meta_boxes', 'wck_cfc_add_trp_side_box');
+function wck_cfc_add_trp_side_box()
+{
+    add_meta_box('wck-cfc-side-trp', __('TranslatePress', 'wck'), 'wck_cfc_side_box_trp', 'wck-meta-box', 'side', 'low');
+}
+
+function wck_cfc_side_box_trp()
+{
+    ?>
+    <a href="https://wordpress.org/plugins/translatepress-multilingual/" target="_blank"><img
+                src="<?php echo plugins_url('/images/banner_trp.png', __FILE__) ?>?v=1" width="254"
+                alt="TranslatePress"/></a>
+	<h4>Easily translate your entire WordPress website</h4>
+	<p><a href="https://wordpress.org/plugins/translatepress-multilingual/" target="_blank">Translate</a> your Custom Post Types and Custom Fields with a WordPress translation plugin that anyone can use.<br/><br/>
+	It offers a simpler way to translate WordPress sites, with full support for WooCommerce and site builders.</p>
+    <?php
+}
+
 
 /* Contextual Help */
 add_action('current_screen', 'wck_cfc_help');

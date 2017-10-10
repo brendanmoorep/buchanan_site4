@@ -1,13 +1,13 @@
-=== Photo Gallery, Image Gallery, Portfolio Gallery - by Modula ===
-Contributors: machothemes
+=== Gallery - Photo Gallery - Image Gallery ===
+Contributors: machothemes, imagegallery, xphotogallery
 Tags: image gallery, photo gallery, responsive gallery, wordpress gallery plugin, wordpress portfolio plugin, lightbox gallery, masonry gallery, envira, envira gallery, nextgen, nextgen gallery, album, content gallery, fancy gallery, gallery widget,  media gallery, mosaic gallery, photo album, polaroid gallery, portfolio gallery, post gallery, thumbnail gallery, video gallery, youtube gallery, filterable portfolio, portfolio gallery, responsive portfolio, wordpress portfolio plugin
 Requires at least: 3.8
-Tested up to: 4.7
-Stable tag: trunk
+Tested up to: 4.8
+Stable tag: 1.2.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Modula is a great responsive photo gallery, image gallery & portfolio gallery plugin. Use Modula to power your next gallery and you won't regret it. Awesome gallery effects included.
+Photo Gallery by Modula - an advanced solution for Photo Gallery users. Create beautiful image galleries in minutes or less. 
 
 == Description ==
 
@@ -156,6 +156,15 @@ Free support is included only with a PRO license: [Buy Modula PRO](https://wp-mo
 7. Admin panel with Material design
 
 == Changelog ==
+
+= 1.2 =
+* Removed sub-menu entry: Tutorial
+* Removed sub-menu entry: Other Galleries
+* Removed fixed action button
+* Removed Modula Survey by Diego Imbriani
+* Re-worked the "Upgrade" page.
+* Removed the "languages" folder. We'll be using GlotPress to handle these
+* Fixed an issue with WPML plugin
 
 = 1.1.13 =
 * Enhanced lightbox compatibility 

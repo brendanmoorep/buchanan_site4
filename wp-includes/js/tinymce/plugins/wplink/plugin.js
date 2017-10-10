@@ -4,7 +4,7 @@
 		renderHtml: function() {
 			return (
 				'<div id="' + this._id + '" class="wp-link-preview">' +
-					'<a href="' + this.url + '" target="_blank" tabindex="-1">' + this.url + '</a>' +
+					'<a href="' + this.url + '" target="_blank" rel="noopener" tabindex="-1">' + this.url + '</a>' +
 				'</div>'
 			);
 		},
@@ -101,7 +101,7 @@
 
 		function getSelectedLink() {
 			var href, html,
-				node = editor.selection.getNode(),
+				node = editor.selection.getStart(),
 				link = editor.dom.getParent( node, 'a[href]' );
 
 			if ( ! link ) {
@@ -248,6 +248,13 @@
 				href = inputInstance.getURL();
 				text = inputInstance.getLinkText();
 				editor.focus();
+
+				var parser = document.createElement( 'a' );
+				parser.href = href;
+
+				if ( 'javascript:' === parser.protocol || 'data:' === parser.protocol ) { // jshint ignore:line
+					href = '';
+				}
 
 				if ( ! href ) {
 					editor.dom.remove( linkNode, true );

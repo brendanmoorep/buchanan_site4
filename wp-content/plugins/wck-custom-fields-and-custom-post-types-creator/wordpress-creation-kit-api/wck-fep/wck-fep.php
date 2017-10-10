@@ -991,7 +991,7 @@ function wck_fep_output_lilo_form(){
 			$lilo_form .= '<input type="password" name="password" id="password" value="" /></li>';
 			$lilo_form .= '<li><label for="confirm-password">'. __('Confirm Password:', 'wck').'</label>';
 			$lilo_form .= '<input type="password" name="confirm-password" id="confirm-password" value="" /></li>';			
-			$lilo_form .= '<li><input type="submit"  onclick="wckFepRegisterUser(\''. $nonce .'\')" name="register" id="register" value="Register" /></li>';
+			$lilo_form .= '<li><input type="submit"  onclick="wckFepRegisterUser(\''. $nonce .'\')" name="register" id="register" value="'. __('Register.', 'wck') .'" /></li>';
 			$lilo_form .= '</ul>';
 			$lilo_form .= '<a href="javascript:void(0)" id="wck-fep-back-to-login">'. __( 'Back to login.', 'wck' ) .'</a></div>';
 		}
