@@ -1111,6 +1111,10 @@ h3.portfolio-item-title:before {
     width:100%;
     padding: 2% 0;
 }
+.page-template-template-contact-us #header{
+    position: relative;
+    background:#fff;
+}
 .page-template-template-contact-us .page-content{
     float:left;
 }
