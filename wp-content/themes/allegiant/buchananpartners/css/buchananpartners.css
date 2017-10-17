@@ -250,17 +250,53 @@ button:active {
     margin-top:32px;
 }
 
+.page-template-template-projects #header{
+    position: relative;
+    background:white;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.page-template-template-projects .menu-main li a{
+    text-shadow: 0px 1px 1px #d3d4d4;
+    color:#23527c;
+}
+
+.page-template-template-projects .gray-box-full-width{
+    background: #23527c;
+}
+
+.page-template-template-projects .gray-box-full-width button{
+    color: white;
+}
+
 .header .logo{
     max-width: 225px;
 }
 
+.home #header{
+    background:rgba(255,255,255,0);
+    transition:all .5s ease;
+    border-bottom: none;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    left: 0;
+}
+.home #header:hover{
+    background:rgba(255,255,255,.75);
+    transition:all .5s ease;
+}
 #header{
     background:rgba(255,255,255,.7);
     border-bottom: none;
     position: absolute;
     z-index: 100;
-    top: 30px;
+    top: 0px;
     left: 0;
+}
+
+.pagetitle{
+    padding:200px 0;
 }
 
 #slider{
@@ -463,7 +499,7 @@ body.page-template-template-projects .main{
 #taxonomies-filter .property-types .btn-primary{
     background: none;
     border: none;
-    color: #23527c;
+    color: white;
     border-radius:0;
     box-shadow:none;
 }
@@ -624,7 +660,15 @@ h3.portfolio-item-title:before {
 /*
     template-team
 */
-
+.page-template-template-team #pagetitle{
+    display:none;
+}
+.page-template-template-team #main{
+    padding-top:100px;
+}
+.page-template-template-team #header{
+    background:#23527c;
+}
 .team-page.page-content{
     padding:50px 0 20px 0;
  }
@@ -920,6 +964,7 @@ h3.portfolio-item-title:before {
     cursor:pointer;
     position: relative;
     top:1px;
+    color:#fff;
 }
 #clear-filters:hover{
     color:#28a4c9;
