@@ -1,0 +1,19 @@
+{
+  "name": "buchananpartners.com",
+  "version": "1.0.0",
+  "description": "Website designed and built for Buchanan Partners",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendanmoorep/buchanan_site4.git"
+  },
+  "author": "Brendan Moore-Penaskovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendanmoorep/buchanan_site4/issues"
+  },
+  "homepage": "https://github.com/brendanmoorep/buchanan_site4#readme"
+}
