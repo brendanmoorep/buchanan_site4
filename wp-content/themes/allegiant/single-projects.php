@@ -8,7 +8,7 @@
         <div class="row">
             <section id="project-gallery" class="photos-area col-md-6">
                 <!-- Slider -->
-                <div id="header-carousel" class="carousel carousel-fade slide header-carousel" data-ride="carousel" data-interval="10000" data-pause="hover">
+                <div id="header-carousel" class="carousel carousel-fade slide header-carousel" data-ride="carousel" data-interval="5000" data-pause="hover">
 
                     <!-- Slider Indicators -->
                     <a class="left carousel-control">

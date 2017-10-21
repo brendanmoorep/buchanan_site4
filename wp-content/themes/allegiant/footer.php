@@ -3,7 +3,7 @@
 			<?php get_sidebar('footer'); ?>
 			
 			<?php do_action('cpotheme_before_footer'); ?>
-			<footer id="footer" class="footer bg-white">
+			<footer id="footer" class="footer">
 				<div class="container">
                     <div class="row">
                         <div class="footer-logo col col-xs-1 col-sm-3">
@@ -12,10 +12,10 @@
                         <div class="footer-contact-info colcol-xs-1 col-sm-3">
                             <h3>Contact Information</h3>
                             <ul>
-                                <li><strong>Telephone </strong>603.978.3117</li>
-                                <li><strong>Email </strong>info@buchananpartners.com</li>
+                                <li><strong>Telephone </strong><?php the_cfc_field('contact_information', 'phone', 3579); ?></li>
+                                <li><strong>Email </strong><?php the_cfc_field('contact_information', 'email', 3579); ?></li>
                                 <li><strong>Address</strong>
-                                    9841 Washingtonian Boulevard Suite 300 Gaithersburg, MD 20878
+                                    <?php the_cfc_field('contact_information', 'address', 3579); ?>
                                 </li>
                             </ul>
                         </div>

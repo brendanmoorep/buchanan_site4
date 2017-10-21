@@ -18,14 +18,17 @@
                         <div>
                             <div class="contact-icon color-blue"><span class="glyphicon glyphicon-earphone"></span></div>
                             <h3>Phone & Fax</h3>
-                            <?php the_cfc_field('contact_information', 'phone'); ?>
+                            <span><strong>Telephone: </strong><?php the_cfc_field('contact_information', 'phone'); ?></span>
+                            <br>
+                            <span><strong>Fax: </strong><?php the_cfc_field('contact_information', 'contact-us-fax'); ?></span>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 col">
                         <div>
                             <div class="contact-icon color-blue"><span class="glyphicon">&#x2709;</span></div>
                             <h3>Email</h3>
-                            <span class="color-blue"><?php the_cfc_field('contact_information', 'email'); ?></span>
+                            <span class="color-blue">
+                                <a href="mailto:<?php the_cfc_field('contact_information', 'email'); ?>"><?php the_cfc_field('contact_information', 'email'); ?></a></span>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 col">

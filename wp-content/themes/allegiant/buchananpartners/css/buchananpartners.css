@@ -250,7 +250,7 @@ button:active {
     margin-top:32px;
 }
 
-.page-template-template-projects #header{
+.page-template-template-projects #header, .single-projects #header{
     position: relative;
     background:white;
     border-bottom: 1px solid #f0f0f0;
@@ -317,14 +317,27 @@ button:active {
     text-shadow: 1px 1px 1px #fff;
 }
 .menu-main li a{
+     transition:color .3s ease;
+     color: #205582;
+     font-weight: 400;
+}
+.menu-main li a:hover{
+    transition:color .3s ease;
+    color:#2a88bf;
+}
+.home #header .menu-main li a{
     font-weight: 400;
     font-size: 19px;
-    /* text-transform: uppercase; */
     color: white;
     text-shadow: 0px 1px 1px #3f3e3e;
-    /* text-decoration: underline; */
-    /* padding-bottom: 10px; */
-    /* border-bottom: 1px solid red; */
+}
+.footer .menu-main li a{
+    font-size: 18px;
+    text-shadow: none;
+    margin-top: -25px;
+}
+.footer .menu-main li{
+    margin-left:0;
 }
 /*
    Homepage
@@ -668,6 +681,13 @@ h3.portfolio-item-title:before {
 }
 .page-template-template-team #header{
     background:#23527c;
+}
+.page-template-template-team #header .menu-main li a{
+    color:white;
+}
+.page-template-template-team #header .menu-main li a:hover{
+    text-shadow: none;
+    color: #2a88bf;
 }
 .team-page.page-content{
     padding:50px 0 20px 0;
@@ -1132,6 +1152,7 @@ h3.portfolio-item-title:before {
 .page-template-template-contact-us .form-content textarea{
     max-height:150px;
 }
+
 #contact-info:before{
     background-color: rgba(35, 82, 124, 0.89);
     content: '';
@@ -1421,6 +1442,11 @@ h3.portfolio-item-title:before {
 }
 
 /* FOOTER STYLES*/
+.footer{
+    background-color:#f9f9f9;
+    border-top:1px solid #e8e8e8;
+}
+
 .footer-logo img{
     max-width:230px;
 }
@@ -1445,14 +1471,10 @@ h3.portfolio-item-title:before {
     list-style:none;
 }
 
-.footer .menu-main li a{
-    margin-top:-17px;
-}
-
 .footer-tagline{
     text-align: left;
     padding-left:30px;
-    margin-top:35px;
+    margin-top:15px;
 }
 
 

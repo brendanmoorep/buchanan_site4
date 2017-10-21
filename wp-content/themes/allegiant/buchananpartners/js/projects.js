@@ -2,6 +2,8 @@ function makeMarkerActive(id){
     removeMapMarkers(id);
     addMapMarker(markers[id], true);
     markers[id].infoWindow.open(map, markers[id].marker);
+    map.panTo(markers[id].geoCodedLocation);
+    //map.setCenter(markers[id].geoCodedLocation);
 }
 
 function makeMarkerInactive(id){
