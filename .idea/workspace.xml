@@ -2,11 +2,180 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="587dd44c-9354-429b-9fc7-a925032ea18b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/screenshot.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/screenshot.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/404.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/404.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/archive.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/archive.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/css/buchananpartners.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/images/diamond-light.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/images/diamond-light.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/images/diamond.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/images/diamond.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/images/heros/birdseye1.jpg" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/images/heros/birdseye1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/projects.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/js/projects.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/properties.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/js/properties.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/theme.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/js/theme.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/lib/shuffle.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/lib/shuffle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/lib/shuffle.min.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/lib/shuffle.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/changelog.txt" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/changelog.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/comments.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/comments.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/changelog.txt" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/changelog.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/classes/class_customizer.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/classes/class_customizer.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/classes/class_menu.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/classes/class_menu.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/css/admin.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/css/admin.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/css/base.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/css/base.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/css/editor.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/css/editor.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/css/icon-fontawesome.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/css/icon-fontawesome.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/css/magnific.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/css/magnific.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/css/welcome.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/css/welcome.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/customizer.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/customizer.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/filters.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/filters.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/fonts/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/fonts/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/forms.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/forms.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/functions.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/icons.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/icons.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/header_double_center.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/header_double_center.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/header_double_left.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/header_double_left.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/header_double_right.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/header_double_right.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/header_single_left.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/header_single_left.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/header_single_right.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/header_single_right.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebar_position_default.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebar_position_default.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebar_position_dleft.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebar_position_dleft.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebar_position_double.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebar_position_double.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebar_position_dright.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebar_position_dright.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebar_position_left.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebar_position_left.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebar_position_none.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebar_position_none.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebar_position_right.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebar_position_right.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebars_1.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebars_1.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebars_2.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebars_2.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebars_3.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebars_3.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebars_4.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebars_4.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/admin/sidebars_5.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/admin/sidebars_5.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/ct-icon.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/ct-icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/noimage.jpg" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/noimage.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/plugin-cpo-content-types.jpg" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/plugin-cpo-content-types.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/plugin-cpo-shortcodes.jpg" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/plugin-cpo-shortcodes.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/plugin-cpo-widgets.jpg" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/plugin-cpo-widgets.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/plugin-forge.jpg" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/plugin-forge.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/images/plugin-infuse.jpg" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/images/plugin-infuse.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/init.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/init.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/layout.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/layout.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/markup.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/menus.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/menus.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/meta.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/meta.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/metaboxes.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/metaboxes.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/metadata/data_customizer.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/metadata/data_customizer.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/metadata/data_general.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/metadata/data_general.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/metadata/data_icons.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/metadata/data_icons.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/metadata/data_metaboxes.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/metadata/data_metaboxes.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/scripts/admin.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/scripts/admin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/scripts/core.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/scripts/core.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/scripts/html5-min.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/scripts/html5-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/scripts/html5.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/scripts/html5.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/scripts/jquery-cycle2-min.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/scripts/jquery-cycle2-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/taxonomy.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/taxonomy.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/css/welcome.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/css/welcome.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/css/welcome_customizer.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/css/welcome_customizer.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/img/ajax-loader.gif" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/img/ajax-loader.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/img/logo.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/img/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/img/macho-themes-logo.svg" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/img/macho-themes-logo.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/js/welcome.js" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/js/welcome.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/notify-system-checks.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/notify-system-checks.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/sections/actions-required.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/sections/actions-required.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/sections/features.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/sections/features.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/sections/getting-started-old.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/sections/getting-started-old.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/sections/getting-started.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/sections/getting-started.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/sections/recommended-plugins.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/sections/recommended-plugins.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/sections/support.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/sections/support.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/welcome-page-setup.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/welcome-page-setup.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/welcome-screen.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/welcome-screen.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/core/woocommerce.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/woocommerce.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/footer.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/functions.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/header.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/home.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/home.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/images/background.jpg" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/images/background.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/images/logo.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/images/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/README.md" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/assets/css/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/assets/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/assets/data/gfonts.json" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/assets/data/gfonts.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/assets/img/posts_carousel.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/assets/img/posts_carousel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/assets/img/posts_column.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/assets/img/posts_column.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/assets/img/posts_grid.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/assets/img/posts_grid.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/assets/img/posts_horizontal.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/assets/img/posts_horizontal.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/assets/img/posts_slider.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/assets/img/posts_slider.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/assets/img/posts_vertical_list.png" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/assets/img/posts_vertical_list.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/assets/vendors/selectize/selectize.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/assets/vendors/selectize/selectize.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/changelog.txt" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/changelog.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/class-epsilon-autoloader.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/class-epsilon-autoloader.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/class-epsilon-color-coded-categories.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/class-epsilon-color-coded-categories.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/class-epsilon-color-scheme.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/class-epsilon-color-scheme.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/class-epsilon-framework.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/class-epsilon-framework.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/class-epsilon-notify-system.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/class-epsilon-notify-system.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/class-epsilon-typography.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/class-epsilon-typography.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/controls/class-epsilon-control-color-scheme.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/controls/class-epsilon-control-color-scheme.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/controls/class-epsilon-control-slider.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/controls/class-epsilon-control-slider.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/controls/class-epsilon-control-toggle.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/controls/class-epsilon-control-toggle.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/controls/class-epsilon-control-typography.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/controls/class-epsilon-control-typography.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/controls/class-epsilon-control-upsell.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/controls/class-epsilon-control-upsell.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/sections/class-epsilon-section-pro.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/sections/class-epsilon-section-pro.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/sections/class-epsilon-section-recommended-actions.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/sections/class-epsilon-section-recommended-actions.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/includes/setup.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/setup.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/index.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/languages/es_ES.mo" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/languages/es_ES.mo" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/languages/es_ES.po" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/languages/es_ES.po" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/license.txt" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/license.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-about-us.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-about-us.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-contact-us.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-portfolio.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-portfolio.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-projects.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-projects.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-properties.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-services.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-services.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-team.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/page.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/readme.txt" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/readme.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/search.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/search.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/sidebar-footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/sidebar-footer.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/sidebar.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/sidebar.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/single-cpo_portfolio.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/single-cpo_portfolio.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/single-cpo_service.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/single-cpo_service.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/single-cpo_team.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/single-cpo_team.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/single-newsitem.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/single-newsitem.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/single-post.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/single-post.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/single-projects.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/single-projects.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/single.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/taxonomy-cpo_portfolio_category.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/taxonomy-cpo_portfolio_category.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/taxonomy-cpo_portfolio_tag.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/taxonomy-cpo_portfolio_tag.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/taxonomy-cpo_service_category.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/taxonomy-cpo_service_category.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/taxonomy-cpo_service_tag.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/taxonomy-cpo_service_tag.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/taxonomy-cpo_team_category.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/taxonomy-cpo_team_category.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-blog.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-blog.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-client.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-client.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-feature.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-feature.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-homepage-project.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-homepage-project.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-news.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-news.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-page-header.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-page-header.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-portfolio.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-portfolio.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-project.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-project.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-service.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-service.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-shuffle-project.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-shuffle-project.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-singlenewspage-header.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-singlenewspage-header.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-team.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-team.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-testimonial.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-testimonial.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-clients.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-clients.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-features.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-features.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-news.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-news.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-portfolio.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-portfolio.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-services.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-services.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-slider.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-slider.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-team.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-team.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-testimonials.php" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-testimonials.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/wpml-config.xml" afterPath="$PROJECT_DIR$/wp-content/themes/buchananpartners/wpml-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/single-newsitem.php" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/single-newsitem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/allegiant/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/allegiant/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,229 +186,91 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.57311916">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="template-properties.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1033">
-                  <caret line="77" column="52" lean-forward="false" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="52" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="template-projects.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-projects.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="element-shuffle-project.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-shuffle-project.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="177" lean-forward="false" selection-start-line="7" selection-start-column="177" selection-end-line="7" selection-end-column="177" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="single-newsitem.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/single-newsitem.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="487">
-                  <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="element-page-header.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-page-header.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="81" lean-forward="false" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="template-about-us.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-about-us.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="template-team.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="element-team.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-team.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="template-contact-us.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="449">
-                  <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/footer.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="29" column="60" lean-forward="true" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
-                  <folding>
-                    <element signature="e#1317#1323#0#HTML" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="properties.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/properties.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#1080#1363#0" expanded="false" />
-                    <element signature="e#2761#3667#0" expanded="false" />
-                    <element signature="e#7103#7205#0" expanded="false" />
-                    <element signature="e#8226#8655#0" expanded="false" />
-                    <element signature="e#8695#8994#0" expanded="false" />
-                    <element signature="e#9143#9230#0" expanded="false" />
-                    <element signature="e#9237#9292#0" expanded="false" />
-                    <element signature="e#10458#10510#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="429">
-                  <caret line="208" column="127" lean-forward="false" selection-start-line="208" selection-start-column="127" selection-end-line="208" selection-end-column="127" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/header.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="71" lean-forward="false" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="markup.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="303">
-                  <caret line="670" column="5" lean-forward="true" selection-start-line="670" selection-start-column="5" selection-end-line="670" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="projects.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/projects.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="164">
-                  <caret line="60" column="82" lean-forward="false" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="82" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="buchananpartners.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="409">
-                  <caret line="328" column="1" lean-forward="false" selection-start-line="328" selection-start-column="1" selection-end-line="328" selection-end-column="1" />
-                  <folding>
-                    <marker date="1505191654000" expanded="true" signature="22860:23047" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="single-cpo_team.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/single-cpo_team.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="23" selection-end-column="12" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/functions.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="690">
-                  <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wp-config.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-config.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="23" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="element-project.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-project.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notify-system-checks.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/notify-system-checks.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customizer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/customizer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1489">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2222">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buchananpartners.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/css/buchananpartners.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="274" column="0" lean-forward="true" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="106" column="8" lean-forward="false" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/css/base.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="549" column="0" lean-forward="true" selection-start-line="549" selection-start-column="0" selection-end-line="605" selection-end-column="57" />
+              <folding>
+                <element signature="e#2276#2371#2" expanded="true" />
+                <element signature="e#27035#28274#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -250,24 +281,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form-c</find>
-      <find>single-tea</find>
-      <find>projects-map-wrapper</find>
-      <find>ategories-list-mobile</find>
-      <find>overflow:auto</find>
-      <find>pr</find>
-      <find>category-filter</find>
-      <find>projects-content-wrapper</find>
-      <find>property-image-wrapper</find>
-      <find>price-sort</find>
-      <find>-sort</find>
-      <find>setLocationAttributes</find>
-      <find>.ok</find>
-      <find>mapsloaded</find>
-      <find>.</find>
-      <find>change</find>
-      <find>getPropertiesLocations</find>
-      <find>('data-location')</find>
       <find>size-filter</find>
       <find>data-location</find>
       <find>sortPropertiesByDistance</find>
@@ -275,11 +288,29 @@
       <find>data-distance</find>
       <find>distance-sort</find>
       <find>clear all</find>
-      <find>menu</find>
       <find>main</find>
       <find>icon</find>
       <find>cpotheme_header</find>
       <find>bg-white</find>
+      <find>team</find>
+      <find>light-bl</find>
+      <find>clear</find>
+      <find>border-bottom</find>
+      <find>#</find>
+      <find>makeMarkerActive</find>
+      <find>#header</find>
+      <find>footer</find>
+      <find>ve</find>
+      <find>ver</find>
+      <find>versi</find>
+      <find>version</find>
+      <find>s</find>
+      <find>scree</find>
+      <find>screensho</find>
+      <find>screenshot.</find>
+      <find>screenshot</find>
+      <find>base</find>
+      <find>menu</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/wp-content/themes</dir>
@@ -314,19 +345,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-portfolio.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/single-project.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/core/metadata/data_metaboxes.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/core/css/base.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-project.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/map-styles.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/theme.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/single-projects.php" />
-        <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-team.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-service.php" />
         <option value="$PROJECT_DIR$/wp-includes/general-template.php" />
@@ -350,15 +373,29 @@
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-shuffle-project.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-projects.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-page-header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/projects.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/properties.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/single-newsitem.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/projects.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/single-projects.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/single-newsitem.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/core/scripts/core.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/core/scripts/jquery-cycle2-min.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/js/welcome.js" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/modula-best-grid-gallery/admin/scripts/editor-plugin.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/buchananpartners/style.css" />
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/class-epsilon-notify-system.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/core/welcome-screen/notify-system-checks.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/allegiant/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/buchananpartners/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/css/buchananpartners.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/init.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/buchananpartners/core/css/base.css" />
       </list>
     </option>
   </component>
@@ -370,8 +407,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -391,6 +428,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -453,7 +492,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="allegiant" />
+              <option name="myItemId" value="buchananpartners" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -475,18 +514,46 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="allegiant" />
+              <option name="myItemId" value="buchananpartners" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="page-templates" />
+              <option name="myItemId" value="buchananpartners" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site4" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buchananpartners" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buchananpartners" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,15 +568,15 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/buchananpartners" />
       <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/template-parts" />
       <recent name="$PROJECT_DIR$/wp-content/themes/allegiant" />
       <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/page-templates" />
       <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/lib" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -661,25 +728,28 @@
       <workItem from="1504750662164" duration="4302000" />
       <workItem from="1504973919139" duration="16651000" />
       <workItem from="1505175984937" duration="7164000" />
+      <workItem from="1508202971400" duration="2630000" />
+      <workItem from="1508615635534" duration="6213000" />
+      <workItem from="1509396574581" duration="3899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246853000" />
+    <option name="totallyTimeSpent" value="259595000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15379113" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1943557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3842151" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38407078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1879518" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18761063" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -710,185 +780,49 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wck-custom-fields-and-custom-post-types-creator/wck-template-api/wck-template-api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wck-custom-fields-and-custom-post-types-creator/wck-template-api/wck-template-api-class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="68" column="20" lean-forward="false" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/single-projects.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="30" lean-forward="false" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/theme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="3859" lean-forward="false" selection-start-line="1" selection-start-column="3859" selection-end-line="1" selection-end-column="3859" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/languages/es_ES.po">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="1038" column="22" lean-forward="false" selection-start-line="1038" selection-start-column="22" selection-end-line="1038" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/theme.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="54" lean-forward="false" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/core/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="184" column="28" lean-forward="false" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/post-thumbnail-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="130" column="31" lean-forward="true" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-client.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="628" column="9" lean-forward="false" selection-start-line="628" selection-start-column="9" selection-end-line="628" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/includes/libraries/epsilon-framework/sections/class-epsilon-section-recommended-actions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="222" column="21" lean-forward="false" selection-start-line="222" selection-start-column="21" selection-end-line="222" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/general-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <marker date="1503111344000" expanded="true" signature="28837:28850" ph="..." />
-            <marker date="1503111344000" expanded="true" signature="55478:55660" ph="SELECT YEAR(... " />
-            <marker date="1503111344000" expanded="true" signature="56552:56687" ph="SELECT YEAR(... " />
-            <marker date="1503111344000" expanded="true" signature="57452:57696" ph="SELECT YEAR(... " />
-            <marker date="1503111344000" expanded="true" signature="58667:58905" ph="SELECT DISTI... " />
-            <marker date="1503111344000" expanded="true" signature="60309:60367" ph="SELECT * FRO... ${$wpdb-&gt;posts}" />
-            <marker date="1503111344000" expanded="true" signature="62672:62767" ph="SELECT 1 as ${$wpdb-&gt;posts}" />
-            <marker date="1503111344000" expanded="true" signature="64005:64219" ph="SELECT MONTH... " />
-            <marker date="1503111344000" expanded="true" signature="64248:64479" ph="SELECT MONTH... " />
-            <marker date="1503111344000" expanded="true" signature="64655:64796" ph="..." />
-            <marker date="1503111344000" expanded="true" signature="64790:64796" ph="..." />
-            <marker date="1503111344000" expanded="true" signature="65241:65247" ph="..." />
-            <marker date="1503111344000" expanded="true" signature="66050:66056" ph="..." />
-            <marker date="1503111344000" expanded="true" signature="66149:66384" ph="SELECT DISTI... ${$wpdb-&gt;posts}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/includes/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="45" column="34" lean-forward="true" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-client.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-blog.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-services.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-services.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-service.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-service.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-news.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-news.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-services.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-services.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/home.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
@@ -899,24 +833,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-homepage-project.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-homepage-project.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-slider.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-slider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/single-projectss.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/single.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/single.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
@@ -924,7 +856,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/single-post.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/single-post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="22" />
@@ -932,47 +864,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-portfolio.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-portfolio.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-singlenewspage-header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-singlenewspage-header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-about-us.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-about-us.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-team.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-team.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/homepage-news.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/homepage-news.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-projects.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-projects.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
@@ -980,65 +907,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-shuffle-project.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-shuffle-project.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="177" lean-forward="false" selection-start-line="7" selection-start-column="177" selection-end-line="7" selection-end-column="177" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-page-header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-page-header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="81" lean-forward="false" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/single-cpo_team.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/single-cpo_team.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="23" selection-end-column="12" />
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="23" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/template-parts/element-project.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/template-parts/element-project.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-properties.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-properties.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1033">
+        <state relative-caret-position="1155">
           <caret line="77" column="52" lean-forward="false" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/properties.js">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/js/properties.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="510">
           <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
           <folding>
             <element signature="e#1080#1363#0" expanded="false" />
@@ -1053,31 +962,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-contact-us.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/markup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        <state relative-caret-position="10050">
+          <caret line="670" column="5" lean-forward="false" selection-start-line="670" selection-start-column="5" selection-end-line="670" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/core/markup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="670" column="5" lean-forward="true" selection-start-line="670" selection-start-column="5" selection-end-line="670" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/js/projects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="60" column="82" lean-forward="false" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="71" lean-forward="false" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
@@ -1085,47 +978,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/style.css">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-team.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="208" column="127" lean-forward="false" selection-start-line="208" selection-start-column="127" selection-end-line="208" selection-end-column="127" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="60" lean-forward="true" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
-          <folding>
-            <element signature="e#1317#1323#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/buchananpartners/css/buchananpartners.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="328" column="1" lean-forward="false" selection-start-line="328" selection-start-column="1" selection-end-line="328" selection-end-column="1" />
-          <folding>
-            <marker date="1505191654000" expanded="true" signature="22860:23047" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/page-templates/template-team.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="525">
           <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/single-newsitem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/allegiant/single-newsitem.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/page-templates/template-contact-us.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        <state relative-caret-position="465">
+          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/js/projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/single-projects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/js/welcome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3135">
+          <caret line="209" column="21" lean-forward="false" selection-start-line="209" selection-start-column="21" selection-end-line="209" selection-end-column="21" />
+          <folding>
+            <marker date="1509399594000" expanded="true" signature="1154:1171" ph="..." />
+            <marker date="1509399594000" expanded="true" signature="2296:2313" ph="..." />
+            <marker date="1509399594000" expanded="true" signature="3352:3369" ph="..." />
+            <marker date="1509399594000" expanded="true" signature="4977:4994" ph="..." />
+            <marker date="1509399594000" expanded="true" signature="6119:6136" ph="..." />
+            <marker date="1509399594000" expanded="true" signature="7175:7192" ph="..." />
+            <marker date="1509399594000" expanded="true" signature="8800:8817" ph="..." />
+            <marker date="1509399594000" expanded="true" signature="9942:9959" ph="..." />
+            <marker date="1509399594000" expanded="true" signature="10998:11015" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/modula-best-grid-gallery/admin/scripts/editor-plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/css/buchananpartners.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/license.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/languages/es_ES.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/includes/libraries/epsilon-framework/class-epsilon-notify-system.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/scripts/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/scripts/jquery-cycle2-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="14" column="496" lean-forward="false" selection-start-line="14" selection-start-column="496" selection-end-line="14" selection-end-column="496" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="39" column="2" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/welcome-screen/notify-system-checks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/customizer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1489">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2222">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="106" column="8" lean-forward="false" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/buchananpartners/css/buchananpartners.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="274" column="0" lean-forward="true" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/buchananpartners/core/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="549" column="0" lean-forward="true" selection-start-line="549" selection-start-column="0" selection-end-line="605" selection-end-column="57" />
+          <folding>
+            <element signature="e#2276#2371#2" expanded="true" />
+            <element signature="e#27035#28274#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

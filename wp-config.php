@@ -26,16 +26,16 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 define('DB_NAME', 'site4');
 
 /** MySQL database username */
-define('DB_USER', 'admin');
-//define('DB_USER', 'root');
+//define('DB_USER', 'admin');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Burton22.');
-//define('DB_PASSWORD', 'root');
+//define('DB_PASSWORD', 'Burton22.');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-//define('DB_HOST', 'localhost:3306');
-define('DB_HOST', 'site3.ccdnwh4lmexx.us-east-1.rds.amazonaws.com:3306');
+define('DB_HOST', 'localhost:3306');
+//define('DB_HOST', 'site3.ccdnwh4lmexx.us-east-1.rds.amazonaws.com:3306');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
