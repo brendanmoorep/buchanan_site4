@@ -103,7 +103,7 @@ if(!function_exists('cpotheme_logo')){
 				$logo_width = cpotheme_get_option('general_logo_width');
 				$logo_url = esc_url(cpotheme_get_option('general_logo'));
 				if($logo_width != '') $logo_width = ' style="width:'.esc_attr($logo_width).'px;"';
-				$output .= '<a class="site-logo" href="'.home_url().'"><img src="'.$logo_url.'" alt="'.get_bloginfo('name').'"'.$logo_width.'/></a>';
+				$output .= '<a class="site-logo" href="'.home_url().'"><img class="light-logo" src="'.$logo_url.'" alt="'.get_bloginfo('name').'"'.$logo_width.'/><img class="dark-logo" src="/wp-content/uploads/2017/12/box-logo-lift_clear.png" alt="'.get_bloginfo('name').'"'.$logo_width.'/></a>';
 			}
 		}
 		

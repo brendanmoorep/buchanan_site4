@@ -1,7 +1,10 @@
 <?php wp_reset_query(); ?>
 
 <?php
-    if (has_post_thumbnail( $post->ID ) && (isset($GLOBALS['SKIP_FEATURED_IMAGE']) && $GLOBALS['SKIP_FEATURED_IMAGE'] !== false)){
+    if($GLOBALS['SKIP_FEATURED_IMAGE'] == true){
+        $header_image = '/wp-content/uploads/2017/05/hero1.jpg';
+    }
+    else if(has_post_thumbnail( $post->ID )){
         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
         $header_image = $image[0];
     }else{

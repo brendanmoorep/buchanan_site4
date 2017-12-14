@@ -5,34 +5,41 @@
     <div class="container">
         <div class="row">
             <div id="taxonomies-filter">
-                <div class="section property-types">
-                    <span><b>Filter by:</b></span>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Project Type <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu project-filter">
-                            <li><a data-filter="all" href="javascript:void(0);">All Projects</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a data-filter="new" href="javascript:void(0);">Current Projects</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a data-filter="archived" href="javascript:void(0);">Old Projects</a></li>
-                        </ul>
-                    </div>
-                </div>
 
+            <?php 
+                    /*
+                        <div class="section property-types">
+                            <span><b>Filter by:</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Project Type <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu project-filter">
+                                    <li><a data-filter="all" href="javascript:void(0);">All Projects</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a data-filter="new" href="javascript:void(0);">Current Projects</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a data-filter="archived" href="javascript:void(0);">Old Projects</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    */
+                ?>
+                
                 <div class="section project-categories categories-list">
-                    <span><b>Categories:</b></span>
+                    <span><b>Project Types:</b></span>
+                    <button data-group="current" type="button" class="category taxonomy-filter btn btn-primary current">Current</button>
+                    <button data-group="past" type="button" class="category taxonomy-filter btn btn-primary past">Past</button>
                     <?php
                     // cpotheme_secondary_menu('property_type', 'menu-portfolio');
-                    $propertyTypes = get_terms('property_type', 'order=ASC&orderby=name');
-                    if(sizeof($propertyTypes) > 0){
-                        foreach($propertyTypes as $pt):
-                            if($pt->slug !== "new" && $pt->slug !== "archived" && $pt->slug !== "featured"){
-                                echo '<button data-group="' . $pt->slug . '" type="button" class="category taxonomy-filter btn btn-primary ' . $pt->slug . '">' . $pt->name . '</button>';
-                            }
-                        endforeach;
-                    }
+                    // $propertyTypes = get_terms('property_type', 'order=ASC&orderby=name');
+                    // if(sizeof($propertyTypes) > 0){
+                    //     foreach($propertyTypes as $pt):
+                    //         if($pt->slug !== "new" && $pt->slug !== "archived" && $pt->slug !== "featured"){
+                    //             echo '<button data-group="' . $pt->slug . '" type="button" class="category taxonomy-filter btn btn-primary ' . $pt->slug . '">' . $pt->name . '</button>';
+                    //         }
+                    //     endforeach;
+                    // }
                     ?>
                 </div>
                 <div class="section project-categories categories-list-mobile">
@@ -41,15 +48,17 @@
                             Property Category <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu project-category-filter">
+                            <button data-group="current" type="button" class="category taxonomy-filter btn btn-primary current">Current</button>
+                            <button data-group="past" type="button" class="category taxonomy-filter btn btn-primary past">Past</button>
                             <?php
-                                if(sizeof($propertyTypes) > 0){
-                                    foreach($propertyTypes as $pt):
-                                        if($pt->slug !== "new" && $pt->slug !== "archived" && $pt->slug !== "featured"){
-                                            echo '<li><a class="' . $pt->slug . ' category" data-group="' . $pt->slug . '" href="javascript:void(0);">' . $pt->name . '</a></li>';
-                                            //echo '<button data-group="' . $pt->slug . '" type="button" class="taxonomy-filter btn btn-primary ' . $pt->slug . '">' . $pt->name . '</button>';
-                                        }
-                                    endforeach;
-                                }
+                                // if(sizeof($propertyTypes) > 0){
+                                //     foreach($propertyTypes as $pt):
+                                //         if($pt->slug !== "new" && $pt->slug !== "archived" && $pt->slug !== "featured"){
+                                //             echo '<li><a class="' . $pt->slug . ' category" data-group="' . $pt->slug . '" href="javascript:void(0);">' . $pt->name . '</a></li>';
+                                //             //echo '<button data-group="' . $pt->slug . '" type="button" class="taxonomy-filter btn btn-primary ' . $pt->slug . '">' . $pt->name . '</button>';
+                                //         }
+                                //     endforeach;
+                                // }
                             ?>
                         </ul>
                     </div>
@@ -66,7 +75,7 @@
     <div id="projects-content-wrapper" class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-lg-6 col-md-offset-0 col-lg-offset-6">
-                <?php $query = new WP_Query('post_type=projects&order=ASC&orderby=menu_order'); ?>
+                <?php $query = new WP_Query('post_type=projects&order=ASC&orderby=menu_order&posts_per_page=-1'); ?>
                 <?php if($query->posts): ?>
                     <section id="portfolio" class="portfolio">
                         <div class="row">

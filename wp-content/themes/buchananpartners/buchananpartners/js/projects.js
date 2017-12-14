@@ -113,14 +113,16 @@ function addMapMarkers(type){
 function removeMapMarkers(id){
     if(id){
         var obj = markers[id];
-        if(obj.marker){
+        if(obj.marker && obj.marker.setMap){
             obj.marker.setMap(null);
             return;
         }
     }
     for(var key in markers) {
         var obj = markers[key];
-        obj.marker.setMap(null);
+        if(obj && obj.marker && obj.marker.setMap){
+            obj.marker.setMap(null);
+        }
     }
 }
 

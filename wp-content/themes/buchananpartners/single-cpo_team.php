@@ -1,6 +1,6 @@
 <?php
     get_header();
-    $GLOBALS['SKIP_FEATURED_IMAGE'] = false;
+    $GLOBALS['SKIP_FEATURED_IMAGE'] = true;
 ?>
 
 <?php get_template_part('template-parts/element', 'page-header'); ?>

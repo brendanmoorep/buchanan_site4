@@ -35,17 +35,17 @@
 			<?php if($foundersQuery->posts): $feature_count = 0; ?>
             <?php ?>
 			<section id="team" class="team">
-                <div id="founders">
+                <!-- <div id="founders">
                     <h2 class="underline center">Our Founders</h2>
-                    <?php cpotheme_grid($foundersQuery->posts, 'element', 'team', 3); ?>
-                </div>
+                    <?php //cpotheme_grid($foundersQuery->posts, 'element', 'team', 3); ?>
+                </div> -->
                 <div id="principles">
                     <h2 class="underline center">Our Principals</h2>
-                    <?php cpotheme_grid($principlesQuery->posts, 'element', 'team', 4); ?>
+                    <?php cpotheme_grid(array_merge($foundersQuery->posts,$principlesQuery->posts), 'element', 'team', 4); ?>
                 </div>
                 <div id="the-team">
                     <h2 class="underline center">The Team</h2>
-                    <?php cpotheme_grid($teamQuery->posts, 'element', 'team', 4); ?>
+                    <?php cpotheme_grid(array_reverse($teamQuery->posts), 'element', 'team', 4); ?>
                 </div>
 			</section>
 			<?php wp_reset_postdata(); ?>
