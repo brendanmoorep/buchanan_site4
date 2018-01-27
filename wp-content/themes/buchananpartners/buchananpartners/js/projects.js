@@ -1,15 +1,16 @@
+var geocoder = null;
+
 function makeMarkerActive(id){
-    removeMapMarkers(id);
-    addMapMarker(markers[id], true);
-    markers[id].infoWindow.open(map, markers[id].marker);
-    map.panTo(markers[id].geoCodedLocation);
-    //map.setCenter(markers[id].geoCodedLocation);
+    if(markers[id] && markers[id].infoWindow){
+        markers[id].infoWindow.open(map, markers[id].marker);
+        map.panTo({lat: markers[id].lat, lng: markers[id].lng});
+    }
 }
 
 function makeMarkerInactive(id){
-    removeMapMarkers(id);
-    addMapMarker(markers[id], false);
-    markers[id].infoWindow.close(map, markers[id].marker);
+    if(markers[id] && markers[id].infoWindow){
+        markers[id].infoWindow.close(map, markers[id].marker);
+    }
 }
 
 function addMarkerInfoWindow(post) {
@@ -59,94 +60,82 @@ function addMarkerInfoWindow(post) {
 
 function addMapMarker(obj, ligthen){
     var marker = null;
-    if(!obj.location || typeof obj.location !== 'string') return false;
-    var icon = ligthen === true ? '/wp-content/uploads/2017/06/diamond-light-1.png' : '/wp-content/uploads/2017/06/diamond.png';
-    if(obj.geoCodedLocation){
+    if(obj.lat && obj.lng){
+        obj.lat = parseFloat(obj.lat);
+        obj.lng = parseFloat(obj.lng);
         marker = new google.maps.Marker({
-            position: obj.geoCodedLocation,
-            map: map,
-            icon:icon
+            position: {lat: obj.lat, lng: obj.lng},
+            map: map
         });
         if(marker){
             obj.marker = marker;
             addMarkerInfoWindow(obj);
         }
-    }else{
-        var geocoder = new google.maps.Geocoder();
-        geocoder.geocode( { 'address': obj.location }, function(results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-                marker = new google.maps.Marker({
-                    position: results[0].geometry.location,
-                    map: map,
-                    icon:icon
-                });
-                if(marker){
-                    obj.marker = marker;
-                    obj.geoCodedLocation = results[0].geometry.location;
-                    addMarkerInfoWindow(obj)
-                }
-            }else{
-                console.log('failed', obj.location, results, status);
-                return false;
-            }
-        });
     }
 }
 
 function addMapMarkers(type){
     var marker;
-    // for(var i = 0; i < markers.length; i++) {
     for(var key in markers) {
         var obj = markers[key];
-        if(obj.location && obj.location !== ''){
-            if(type){
-                if(obj.categories.indexOf(type) > 0) {
-                    marker = addMapMarker(obj);
-                }
-            }else{
+        var categories = obj.categories.replace("'", "");
+        if(type && type !== 'all'){
+            if(categories.includes(type)){
                 marker = addMapMarker(obj);
             }
-        }
+        }else{
+            if(obj.location && obj.location !== ''){
+                marker = addMapMarker(obj);
+            }
+        }    
     }
 }
 
 function removeMapMarkers(id){
     if(id){
         var obj = markers[id];
-        if(obj.marker && obj.marker.setMap){
-            obj.marker.setMap(null);
-            return;
-        }
+        obj.marker.setMap();
+        delete obj.marker;
+        obj.marker = null;
+        return;
     }
     for(var key in markers) {
         var obj = markers[key];
-        if(obj && obj.marker && obj.marker.setMap){
-            obj.marker.setMap(null);
+        if(obj.marker){
+            obj.marker.setMap();
+            delete obj.marker;
+            obj.marker = null;
         }
     }
 }
 
 function filterMapMarkers(type){
+    type = type.replace("'",null);
+    type = type.replace('"',null);
+    if(typeof type === "string"){
+        type = type.includes('all') || type.includes("all") ? null : type;
+    }
     removeMapMarkers();
     addMapMarkers(type);
+    
 }
 
 function removeMapInfoWindows(){
     for(var key in markers) {
         var obj = markers[key];
         if(obj.infoWindow){
-            console.log(obj);
             makeMarkerInactive(obj.ID);
         }
     }
 }
 
 function initMap() {
+    geocoder = new google.maps.Geocoder();
     var uluru = {lat: 38.89511, lng: -77.03637};
     map = new google.maps.Map(document.getElementById('projects-map'), {
         zoom: 10,
         center: uluru,
-        scrollwheel:  false,
+        //scrollwheel:  false,
         styles: [ { "featureType": "administrative", "elementType": "all", "stylers": [ { "visibility": "on" }, { "lightness": 33 } ] }, { "featureType": "administrative", "elementType": "labels", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "administrative", "elementType": "labels.text", "stylers": [ { "gamma": "0.75" } ] }, { "featureType": "administrative.neighborhood", "elementType": "labels.text.fill", "stylers": [ { "lightness": "-37" } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "color": "#f9f9f9" } ] }, { "featureType": "landscape.man_made", "elementType": "geometry", "stylers": [ { "saturation": "-100" }, { "lightness": "40" }, { "visibility": "off" } ] }, { "featureType": "landscape.natural", "elementType": "labels.text.fill", "stylers": [ { "saturation": "-100" }, { "lightness": "-37" } ] }, { "featureType": "landscape.natural", "elementType": "labels.text.stroke", "stylers": [ { "saturation": "-100" }, { "lightness": "100" }, { "weight": "2" } ] }, { "featureType": "landscape.natural", "elementType": "labels.icon", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "poi", "elementType": "geometry", "stylers": [ { "saturation": "-100" }, { "lightness": "80" } ] }, { "featureType": "poi", "elementType": "labels", "stylers": [ { "saturation": "-100" }, { "lightness": "0" } ] }, { "featureType": "poi.attraction", "elementType": "geometry", "stylers": [ { "lightness": "-4" }, { "saturation": "-100" } ] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [ { "color": "#c5dac6" }, { "visibility": "on" }, { "saturation": "-95" }, { "lightness": "62" } ] }, { "featureType": "poi.park", "elementType": "labels", "stylers": [ { "visibility": "on" }, { "lightness": 20 } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "lightness": 20 } ] }, { "featureType": "road", "elementType": "labels", "stylers": [ { "saturation": "-100" }, { "gamma": "1.00" } ] }, { "featureType": "road", "elementType": "labels.text", "stylers": [ { "gamma": "0.50" } ] }, { "featureType": "road", "elementType": "labels.icon", "stylers": [ { "saturation": "50" }, { "gamma": "0.2" } ] }, { "featureType": "road.highway", "elementType": "geometry", "stylers": [ { "color": "#40b9ff" }, { "saturation": "-100" } ] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [ { "lightness": "-13" } ] }, { "featureType": "road.highway", "elementType": "labels.icon", "stylers": [ { "lightness": "0" }, { "gamma": "1.09" } ] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [ { "color": "#40b9ff" }, { "saturation": "-100" }, { "lightness": "47" } ] }, { "featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [ { "lightness": "-12" } ] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [ { "saturation": "-100" } ] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [ { "color": "#40b9ff" }, { "lightness": "77" } ] }, { "featureType": "road.local", "elementType": "geometry.fill", "stylers": [ { "lightness": "5" }, { "saturation": "100" } ] }, { "featureType": "road.local", "elementType": "geometry.stroke", "stylers": [ { "saturation": "100" }, { "lightness": "15" } ] }, { "featureType": "transit.station.airport", "elementType": "geometry", "stylers": [ { "lightness": "47" }, { "saturation": "-100" } ] }, { "featureType": "water", "elementType": "all", "stylers": [ { "visibility": "on" }, { "color": "#acbcc9" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "saturation": "53" } ] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [ { "lightness": "-42" }, { "saturation": "17" } ] }, { "featureType": "water", "elementType": "labels.text.stroke", "stylers": [ { "lightness": "61" } ] } ]
     });
     addMapMarkers();
@@ -167,6 +156,8 @@ jQuery( document ).ready(function() {
     jQuery('#clear-filters').click(function(){
         myShuffle.sort({});
         myShuffle.filter();
+        removeMapMarkers();
+        addMapMarkers();
     });
 
     jQuery('.project-categories .category').click(function(e){

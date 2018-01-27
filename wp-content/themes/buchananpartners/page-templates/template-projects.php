@@ -63,7 +63,7 @@
                         </ul>
                     </div>
                 </div>
-                <span id="clear-filters">Clear All <span class="glyphicon glyphicon-remove-circle"></span></span>
+                <span id="clear-filters">All <span class="glyphicon glyphicon-remove-circle"></span></span>
             </div>
         </div>
     </div>
@@ -101,6 +101,8 @@
                                         'ID' => $post->ID,
                                         'title' => $post->post_title,
                                         'location'=> get_cfc_field('project_location', 'location', $post->ID),
+                                        'lat'=> get_cfc_field('project_location', 'latitude', $post->ID),
+                                        'lng'=> get_cfc_field('project_location', 'longitude', $post->ID),
                                         'categories' => $termsAttr,
                                         'link' => get_permalink(),
                                         'properties' => $properties, // this will be empty array if none entered
@@ -132,4 +134,4 @@
     var markers = <?php echo json_encode($mapMarkers); ?>;
 </script>
 <script type="text/javascript" src="/wp-content/themes/buchananpartners/buchananpartners/js/projects.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvsunr_JTCCR55es0vf3c8zO0kjwl35nk&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6__U8WkrpYyASJ5-5OdPXYGyUE_FAzXI&callback=initMap"></script>

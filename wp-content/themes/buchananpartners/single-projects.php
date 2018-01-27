@@ -61,7 +61,7 @@
                     <div id="properties-wrapper">
                         <?php
                             $properties_meta = get_cfc_meta( 'properties' ); // all values in properties field custom meta box
-                            echo !empty($properties_meta) ? '<h3 class="blue-heading">Available Properties</h3>' : '<p>There are currently no available properties for lease</p>';
+                            echo !empty($properties_meta) ? '<h3 class="blue-heading">Available Properties</h3>' : '<p>There is currently no available space for lease</p>';
                             foreach($properties_meta as $key => $value):
                                 $property_image = get_cfc_field( 'properties','property_images', false, $key );
                             ?>
@@ -133,5 +133,5 @@
             jQuery("#header-carousel").carousel('next');
         });
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvsunr_JTCCR55es0vf3c8zO0kjwl35nk&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6__U8WkrpYyASJ5-5OdPXYGyUE_FAzXI&callback=initMap"></script>
 <?php get_footer(); ?>

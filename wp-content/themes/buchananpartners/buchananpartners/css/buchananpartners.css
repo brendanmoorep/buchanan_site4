@@ -759,6 +759,13 @@ h3.portfolio-item-title:before {
     margin-left:0;
     margin-right:0;
 }
+#team > div .row:last-of-type .col4{
+    float:none;
+    display:inline-block;
+}
+#team > div .row:last-of-type{
+    text-align: center;
+}
 .team-member{
     position: relative;
     overflow:hidden;

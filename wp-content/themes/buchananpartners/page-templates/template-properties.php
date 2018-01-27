@@ -184,5 +184,5 @@
     var propertyTypes = <?php echo json_encode($propertyTypes); ?>;
 </script>
     <script type="text/javascript" src="/wp-content/themes/buchananpartners/buchananpartners/js/properties.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvsunr_JTCCR55es0vf3c8zO0kjwl35nk&callback=googleMapsLoaded"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6__U8WkrpYyASJ5-5OdPXYGyUE_FAzXI&callback=googleMapsLoaded"></script>
 <?php get_footer(); ?>
